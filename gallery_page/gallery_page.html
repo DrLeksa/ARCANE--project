@@ -3,12 +3,45 @@
   <head>
     <meta charset="UTF-8">
     <title>Arcane: League of Legends</title>
-
+    <link rel="shortcut icon" href="../images/main-icon.png">
     <link rel="stylesheet" href="../icons/fontawesome/all.min.css" type="text/css">
-
+    <link rel="stylesheet" href="../header-footer_style.css" type="text/css">
     <link rel="stylesheet" href="gallery_style.css" type="text/css">
   </head>
   <body>
+
+    <header class="header">
+      <div class="header__navigation">
+        <a class="header__link button_ripple" href="gallery_page.html">
+          <p class="header__text">Иллюстрации</p></a>
+        <a class="header__link button_ripple" href="../video_page/video_page.html"><p class="header__text">Видео</p></a>
+        <a class="header__link header__logo-link" href="../main_page.html">
+          <div class="header__logo">
+            <div class="header__letter--block">
+              <img class="header__letter" src="../images/img_decor/arcane-logo-a-1.png" alt="no image">
+            </div>
+            <div class="header__letter--block header__letter--display-none">
+              <img class="header__letter" src="../images/img_decor/arcane-logo-r.png" alt="no image">
+            </div>
+            <div class="header__letter--block header__letter--display-none">
+              <img class="header__letter" src="../images/img_decor/arcane-logo-c.png" alt="no image">
+            </div>
+            <div class="header__letter--block header__letter--display-none">
+              <img class="header__letter" src="../images/img_decor/arcane-logo-a-2.png" alt="no image">
+            </div>
+            <div class="header__letter--block header__letter--display-none">
+              <img class="header__letter" src="../images/img_decor/arcane-logo-n.png" alt="no image">
+            </div>
+            <div class="header__letter--block header__letter--display-none">
+              <img class="header__letter" src="../images/img_decor/arcane-logo-e.png" alt="no image">
+            </div>
+          </div>
+        </a>
+        <a class="header__link button_ripple" href="../creators_page/creators_page.html">
+          <p class="header__text">Создание</p></a>
+        <a class="header__link button_ripple" href="#"><p class="header__text">История</p></a>
+      </div>
+    </header>
 
     <section class="character-gallery--section">
       <div class="character-gallery__link character-gallery--caitlyn" onclick="toggleCaitlyn();">
@@ -238,6 +271,39 @@
       </div>
     </section>
     <script src="js/gallery_frames-carousel.js"></script>
+
+    <button class="scroll-top scroll-top--waves scroll-top--animation" type="button">
+      <i class="fa-solid fa-chevron-up"></i></button>
+    <script src="../js/button__scroll-top.js"></script>
+
+    <footer class="footer">
+      <div class="footer__block">
+        <div class="footer__content footer__netflix-block">
+          <p class="footer__text--netflix">Уже доступно на</p>
+          <a href="https://www.netflix.com/by-ru/title/81435684" target="_blank">
+            <img class="footer__image--netflix" src="../images/footer/netflix-logo-vector.svg" alt="no image">
+          </a>
+        </div>
+        <div class="footer__content footer__networks-block">
+          <div class="footer__network"><i class="fa-brands fa-twitter"></i></div>
+          <div class="footer__network"><i class="fa-brands fa-instagram"></i></div>
+          <div class="footer__network"><i class="fa-brands fa-vk"></i></div>
+          <div class="footer__network"><i class="fa-brands fa-youtube"></i></div>
+          <div class="footer__network"><i class="fa-brands fa-facebook"></i></div>
+        </div>
+        <div class="footer__content">
+          <a href="https://www.riotgames.com/en" target="_blank">
+            <img class="footer__image--riot" src="../images/footer/riot.png" alt="no image">
+          </a>
+        </div>
+        <div class="footer__content footer__text-block">
+          <p class="footer__text">© 2021 Riot Games, Inc. ARCANE LEAGUE OF LEGENDS и все связанные с ним логотипы
+            являются товарными знаками, знаками обслуживания и/или зарегистрированными товарными знаками Riot Games,
+            Inc.
+          </p>
+        </div>
+      </div>
+    </footer>
 
   </body>
 </html>
