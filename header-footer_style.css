@@ -99,7 +99,7 @@ body {
   transform: scale(1.1) translateY(1px);
 }
 
-.header__link .circle {
+a .circle {
   position: absolute;
   width: 100px;
   height: 100px;

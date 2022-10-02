@@ -244,15 +244,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  margin: 0;
+  margin-top: 2em;
   font-size: 1rem;
 }
 
 .frames__carousel {
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  height: 530px;
-  width: 500px;
+  height: 540px;
   overflow: hidden;
 }
 
@@ -263,26 +260,51 @@ body {
 }
 
 .frames__image {
-  width: 500px;
+  width: 635px;
   height: 500px;
   object-fit: cover;
 }
 
 .frames__buttons-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .frames__button {
-  background-color: #004343;
-  color: #fff;
-  border: none;
-  padding: 0.5rem;
   cursor: pointer;
-  width: 49.5%;
+  margin: 0 1em;
+  width: 80px;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0.5rem 1.2em;
+  font-size: .9em;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(30, 30, 30, 0.9);
+  transition: all .3s;
+  box-shadow: 2px 2px 9px 0 rgb(0 0 0 / 80%);
 }
 
 .frames__button:hover {
-  background-color: lightblue;
+  width: 140px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+}
+
+.left-button:active {
+  transform: translateX(-10px);
+  color: black;
+}
+
+.right-button:active {
+  transform: translateX(10px);
+  color: black;
+}
+
+.border {
+  width: 100%;
+  height: 25px;
+  background-image: url(../images/img_decor/header_bg.jpg);
+  background-size: contain;
+  box-shadow: 7px 7px 20px 0 rgb(0 0 0 / 100%);
 }
 

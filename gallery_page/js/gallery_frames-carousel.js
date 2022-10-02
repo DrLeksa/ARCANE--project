@@ -14,13 +14,13 @@ function run() {
 }
 
 function changeImage() {
-  if(idx > img.length - 1) {
+  if(idx > img.length - 3) {
     idx = 0
   } else if(idx < 0) {
-    idx = img.length - 1
+    idx = img.length - 3
   }
 
-  images.style.transform = `translateX(${-idx * 500}px)`
+  images.style.transform = `translateX(${-idx * 635}px)`
 }
 
 function resetInterval() {

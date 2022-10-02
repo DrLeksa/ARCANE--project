@@ -42,6 +42,7 @@
         <a class="header__link button_ripple" href="#"><p class="header__text">История</p></a>
       </div>
     </header>
+    <script src="../js/button_ripple.js"></script>
 
     <section class="character-gallery--section">
       <div class="character-gallery__link character-gallery--caitlyn" onclick="toggleCaitlyn();">
@@ -196,6 +197,8 @@
     </div>
     <script src="js/gallery_choose-gallery.js"></script>
 
+    <div class="border"></div>
+
     <div class="slider">
       <div class="slider__container">
         <button class="slider__button slider__left-button" type="button">
@@ -261,12 +264,11 @@
           <img class="frames__image" src="images/arcane_frames/frame_47.jpg" alt="no image">
           <img class="frames__image" src="images/arcane_frames/frame_48.jpg" alt="no image">
           <img class="frames__image" src="images/arcane_frames/frame_49.jpg" alt="no image">
-          <img class="frames__image" src="images/arcane_frames/frame_50.jpg" alt="no image">
         </div>
 
         <div class="frames__buttons-container">
-          <button id="left" class="frames__button">Prev</button>
-          <button id="right" class="frames__button">Next</button>
+          <button id="left" class="frames__button left-button"><i class="fa-regular fa-chevron-left"></i></button>
+          <button id="right" class="frames__button right-button"><i class="fa-regular fa-chevron-right"></i></button>
         </div>
       </div>
     </section>
