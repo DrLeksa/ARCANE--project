@@ -413,7 +413,7 @@ body {
 }
 
 .series__link:hover .series__icon {
-  color: rgba(162, 125, 27, 0.8);
+  color: rgb(183 147 53 / 77%);
 }
 
 .series__link:hover .series_title:after {
@@ -423,7 +423,7 @@ body {
 .series__link:hover .series_text--hover {
   color: #B81D24;
   font-weight: bold;
-  font-size: 1.2em;
+  transition: all 1s;
 }
 
 .series__image-block {
