@@ -1,6 +1,8 @@
+"use strict"
+
 const images = document.getElementById('images')
-const leftButton = document.getElementById('left')
-const rightButton = document.getElementById('right')
+const leftButton = document.getElementById('left-button')
+const rightButton = document.getElementById('right-button')
 
 const img = document.querySelectorAll('#images img')
 
@@ -10,10 +12,10 @@ let interval = setInterval(run, 3000)
 
 function run() {
   idx++
-  changeImage()
+  changeImages()
 }
 
-function changeImage() {
+function changeImages() {
   if(idx > img.length - 3) {
     idx = 0
   } else if(idx < 0) {
@@ -30,12 +32,12 @@ function resetInterval() {
 
 rightButton.addEventListener('click', () => {
   idx++
-  changeImage()
+  changeImages()
   resetInterval()
 })
 
 leftButton.addEventListener('click', () => {
   idx--
-  changeImage()
+  changeImages()
   resetInterval()
 })

@@ -15,7 +15,6 @@ body {
 }
 
 .character-gallery--jinx {
-  z-index: 0;
   animation: width 2s;
 }
 
@@ -281,7 +280,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 2em;
+  margin-top: 3em;
   font-size: 1rem;
 }
 
@@ -327,12 +326,12 @@ body {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
 }
 
-.left-button:active {
+#left-button:active {
   transform: translateX(-10px);
   color: black;
 }
 
-.right-button:active {
+#right-button:active {
   transform: translateX(10px);
   color: black;
 }

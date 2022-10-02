@@ -199,19 +199,6 @@
 
     <div class="border"></div>
 
-    <div class="slider">
-      <div class="slider__container">
-        <button class="slider__button slider__left-button" type="button">
-          <i class="fa-regular fa-chevron-left"></i>
-        </button>
-        <button class="slider__button slider__right-button" type="button">
-          <i class="fa-regular fa-chevron-right"></i>
-        </button>
-        <button class="slider__close" type="button"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-    </div>
-    <script src="js/gallery_slider.js"></script>
-
     <section class="frames">
       <div class="frames__carousel">
         <div class="frames__image-container" id="images">
@@ -267,12 +254,27 @@
         </div>
 
         <div class="frames__buttons-container">
-          <button id="left" class="frames__button left-button"><i class="fa-regular fa-chevron-left"></i></button>
-          <button id="right" class="frames__button right-button"><i class="fa-regular fa-chevron-right"></i></button>
+          <button id="left-button" class="frames__button">
+            <i class="fa-regular fa-chevron-left"></i></button>
+          <button id="right-button" class="frames__button">
+            <i class="fa-regular fa-chevron-right"></i></button>
         </div>
       </div>
     </section>
     <script src="js/gallery_frames-carousel.js"></script>
+
+    <div class="slider">
+      <div class="slider__container">
+        <button class="slider__button slider__left-button" type="button">
+          <i class="fa-regular fa-chevron-left"></i>
+        </button>
+        <button class="slider__button slider__right-button" type="button">
+          <i class="fa-regular fa-chevron-right"></i>
+        </button>
+        <button class="slider__close" type="button"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+    <script src="js/gallery_slider.js"></script>
 
     <button class="scroll-top scroll-top--waves scroll-top--animation" type="button">
       <i class="fa-solid fa-chevron-up"></i></button>

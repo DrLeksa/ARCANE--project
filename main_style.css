@@ -5,6 +5,16 @@ body{
   background-size: cover;
 }
 
+.nav,
+.footer {
+  animation: opacity 2s ease-in;
+}
+
+@keyframes opacity {
+  0% {opacity: 0;}
+  100% {opacity: .2;}
+}
+
 /*футер для главной страницы*/
 
 .footer {
