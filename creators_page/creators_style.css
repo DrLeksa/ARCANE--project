@@ -1,12 +1,47 @@
-* {
-  padding: 0;
-  border: 0;
-  margin: 0;
-}
-
 body {
   background-image: url("images/background/bg_main.jpg");
   background-position: center;
+}
+
+.header,
+.quote {
+  animation: opacity 1.5s ease-in;
+}
+
+.creators {
+  animation: translateY 0.5s ;
+}
+
+@keyframes translateY {
+  0% {transform: translateY(596px);}
+  100% {transform: translateY(0);}
+}
+
+.creator {
+  animation: slowTranslateY 1s;
+}
+
+@keyframes slowTranslateY {
+  0% {transform: translateY(596px);}
+  100% {transform: translateY(0);}
+}
+
+.creator__text--block {
+  animation: translateX 2s;
+}
+
+@keyframes translateX {
+  0% {transform: translateX(600px);}
+  100% {transform: translateX(0);}
+}
+
+.video--block {
+  animation: minusTranslateX 2s;
+}
+
+@keyframes minusTranslateX {
+  0% {transform: translateX(-600px);}
+  100% {transform: translateX(0);}
 }
 
 /* quote */
@@ -21,6 +56,11 @@ body {
   position: relative;
   text-shadow: 2px 2px 1px rgb(0 0 0);
   color: white;
+}
+
+@keyframes opacity {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 .quote:before {
