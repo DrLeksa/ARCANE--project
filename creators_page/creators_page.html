@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en ru" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="UTF-8">
+    <title>Arcane: League of Legends</title>
+    <link rel="shortcut icon" href="../images/main-icon.png">
+    <link rel="stylesheet" href="../icons/fontawesome/all.min.css" type="text/css">
+    <link rel="stylesheet" href="../general_style.css" type="text/css">
+    <link rel="stylesheet" href="creators_style.css" type="text/css">
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header__navigation">
+        <a class="header__link button_ripple" href="../video_page/video_page.html" title="Трейлеры и Сериал">
+          <p class="header__text">Видео</p></a>
+        <a class="header__link button_ripple" href="../gallery_page/gallery_page.html" title="Галерея">
+          <p class="header__text">Иллюстрации</p></a>
+        <a class="header__link header__logo-link" href="../main_page.html" title="Главная страница">
+          <div class="header__logo">
+            <div class="header__letter--block">
+              <img class="header__letter" src="../images/img_decor/arcane-logo-a-1.png" alt="no image">
+            </div>
+            <div class="header__letter--block header__letter--display-none">
+              <img class="header__letter" src="../images/img_decor/arcane-logo-r.png" alt="no image">
+            </div>
+            <div class="header__letter--block header__letter--display-none">
+              <img class="header__letter" src="../images/img_decor/arcane-logo-c.png" alt="no image">
+            </div>
+            <div class="header__letter--block header__letter--display-none">
+              <img class="header__letter" src="../images/img_decor/arcane-logo-a-2.png" alt="no image">
+            </div>
+            <div class="header__letter--block header__letter--display-none">
+              <img class="header__letter" src="../images/img_decor/arcane-logo-n.png" alt="no image">
+            </div>
+            <div class="header__letter--block header__letter--display-none">
+              <img class="header__letter" src="../images/img_decor/arcane-logo-e.png" alt="no image">
+            </div>
+          </div>
+        </a>
+        <a class="header__link button_ripple" href="creators_page.html" title="Как создавался Аркейн">
+          <p class="header__text">Создание</p></a>
+        <a class="header__link button_ripple" href="#" title="История мира"><p class="header__text">История</p></a>
+      </div>
+    </header>
+    <script src="../js/button_ripple.js"></script>
+
+    <div class="quote">
+      <p class="quote__text">Если собираешься изменить мир, не спрашивай разрешения</p>
+      <p class="quote__author">- "Аркейн", первый сезон, вторая серия</p>
+    </div>
+
+    <section class="creators">
+      <section class="creators__content creators--bg-1">
+        <div class="title">
+          <p class="title__text">Аркейн: преодолевая ущелье | Часть 1 - Я всегда мечтаю рисково</p>
+        </div>
+
+        <div class="creator block_with_video">
+          <div class="video--block">
+            <iframe class="video" width="1280" height="692"
+                    src="https://www.youtube.com/embed/Mz4-38d3-AE"
+                    title="Аркейн: преодолевая ущелье | Часть 1 - Я всегда мечтаю рисково" frameborder="0"
+                    allowfullscreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+            </iframe>
+            <button class="video__open" onclick="togglePart1();">Смотреть в окне</button>
+          </div>
+          <div class="creation__part_1">
+            <iframe class="creation__video_1" width="1280" height="692"
+                    src="https://www.youtube.com/embed/Mz4-38d3-AE"
+                    title="Аркейн: преодолевая ущелье | Часть 1 - Я всегда мечтаю рисково" frameborder="0"
+                    allowfullscreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+            </iframe>
+            <button class="video__close" onclick="togglePart1();" type="button">
+              <i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="creator__card creator__card--width-low">
+            <div class="creator__img--block">
+              <img class="creator__img" src="images/Christian_Linke.jpg" alt="no image">
+            </div>
+            <div class="creator__info">
+              <p class="creator__name">Christian Linke</p>
+              <p class="creator__work">Креативный директор Riot Games</p>
+              <p class="creator__description">Шоураннер, автор идеи и сценарист "Аркейна"</p>
+            </div>
+          </div>
+          <div class="creator__block">
+            <div class="creator__text--block">
+              <p class="creator__text">Думаю, не стоит работать над продуктом, который не дает возможности исследовать
+                что-то личное.<span class="text--highlight">История, которая у нас есть,- это история о семье, история о
+                родственниках которым тяжело простить друг друга.</span>Это мир, где технологии берут вверх, а мы
+                чувствуем, что теряем над ними контроль.</p>
+              <p class="creator__text">Думая обо всем этом мы..., мы живые люди, размышляем и беспокоимся. И мы также
+                хотим задать вопросы, которые нужно задать, может, и не давая на них ответа, но, хотя бы,
+                спросить:<span class="text--highlight">"Заслуживает ли второго шанса персонаж вроде Джинкс? Можно ли
+                простить чудовище?" - Я не знаю.</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="creator block_without_video">
+          <div class="creator__card creator__card--width-low">
+            <div class="creator__img--block">
+              <img class="creator__img" src="images/Hervé_Dupont.jpg" alt="no image">
+            </div>
+            <div class="creator__info">
+              <p class="creator__name">Hervé Dupont</p>
+              <p class="creator__work">Глава производства анимационной студии "Fortiche"</p>
+              <a class="creator__link" href="https://www.forticheprod.com/" target="_blank" title="forticheprod.com">
+                <img class="creator__logo" src="images/fortiche_logo.jpg" alt="no image"></a>
+            </div>
+          </div>
+          <div class="creator__block">
+            <div class="creator__text--block">
+              <p class="creator__text">На дворе стоял 2017 год, и все усердно работали над выпуском пилотной серии. А
+                потом у нас произошло обсуждение с "Riot",<span class="text--highlight">и они пояснили: "Нам не нравится
+                сценарий второй и третьей серии".</span>И в конце звонка мы спрашивали себя: "Они реально это сказали?"
+                ... "Да".<span class="text--highlight">И они остановили всё производство.</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="creators__content creators--bg-2">
+        <div class="title">
+          <p class="title__text">Аркейн: преодолевая ущелье | Часть 2 - Упорство (или когда ваше «лучшее» – отстой)</p>
+        </div>
+
+        <div class="comment block_with_video">
+          <div class="video--block">
+            <iframe class="video" width="1280" height="720" src="https://www.youtube.com/embed/UOxkGD8qRB4"
+                    title="K/DA - POP/STARS (ft. Madison Beer, (G)I-DLE, Jaira Burns) | Music Video - League of Legends"
+                    frameborder="0" allowfullscreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+            </iframe>
+            <button class="video__open" onclick="toggleClipKDA();">Смотреть в окне</button>
+          </div>
+          <div class="creation__clip-KDA">
+            <iframe class="creation__video-KDA" width="1280" height="720"
+                    src="https://www.youtube.com/embed/UOxkGD8qRB4"
+                    title="K/DA - POP/STARS (ft. Madison Beer, (G)I-DLE, Jaira Burns) | Music Video - League of Legends"
+                    frameborder="0" allowfullscreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+            </iframe>
+            <button class="video__close" onclick="toggleClipKDA();" type="button">
+              <i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="comment__block">
+            <p class="comment__text">Мы знали, что у нас не будет работы для них в ближайшее время. И мы начали
+              спрашивать -<span class="text--highlight">"мы можем что-то сделать? Клип?" Что угодно, что бы поддержало,
+                обеспечило работу "Fortiche".</span></p>
+            <p class="comment__commentator">Christian Linke</p>
+          </div>
+        </div>
+
+        <div class="comment block_with_video">
+          <div class="video--block">
+            <iframe class="video" width="1280" height="720" src="https://www.youtube.com/embed/fB8TyLTD7EE"
+                    title="RISE (ft. The Glitch Mob, Mako, and The Word Alive) | Worlds 2018 - League of Legends"
+                    frameborder="0" allowfullscreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+            </iframe>
+            <button class="video__open" onclick="toggleClipRise();">Смотреть в окне</button>
+          </div>
+          <div class="creation__clip-RISE">
+            <iframe class="creation__video-RISE" width="1280" height="720"
+                    src="https://www.youtube.com/embed/fB8TyLTD7EE"
+                    title="RISE (ft. The Glitch Mob, Mako, and The Word Alive) | Worlds 2018 - League of Legends"
+                    frameborder="0" allowfullscreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+            </iframe>
+            <button class="video__close" onclick="toggleClipRise();" type="button">
+              <i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="comment__block">
+            <p class="comment__text">Как хорошо, что мы с Алексом<span class="text-parentheses">(Alex Yee - друг
+              Кристиана и соавтор "Аркейна")</span>хреново работаем, если бы нам не понадобилось время на развитие
+              сюжета,<span class="text--highlight">клипы на "Pop/Stars" и "Rise" никогда бы не увидели свет. Так что ...
+              не благодарите.</span></p>
+            <p class="comment__commentator">Christian Linke</p>
+          </div>
+        </div>
+
+        <div class="creator block_with_video">
+          <div class="video--block">
+            <iframe class="video" width="1280" height="692"
+                    src="https://www.youtube.com/embed/Mz4-38d3-AE"
+                    title="Аркейн: преодолевая ущелье | Часть 1 - Я всегда мечтаю рисково" frameborder="0"
+                    allowfullscreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+            </iframe>
+            <button class="video__open" onclick="togglePart2();">Смотреть в окне</button>
+          </div>
+          <div class="creation__part_2">
+            <iframe class="creation__video_2" width="1280" height="692"
+                    src="https://www.youtube.com/embed/xpPyPguzafU"
+                    title="Аркейн: преодолевая ущелье | Часть 2 - Упорство (или когда ваше «лучшее» – отстой)"
+                    frameborder="0" allowfullscreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+            </iframe>
+            <button class="video__close" onclick="togglePart2();" type="button">
+              <i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="creator__card">
+            <div class="creator__img--block">
+              <img class="creator__img" src="images/Amanda_Overton.jpg" alt="no image">
+            </div>
+            <div class="creator__info">
+              <p class="creator__name">Amanda Overton</p>
+              <p class="creator__work">Сценарист, Писатель</p>
+            </div>
+          </div>
+          <div class="creator__block">
+            <div class="creator__text--block">
+              <p class="creator__text"><span class="text--highlight">Я всегда думаю о сценах драк, как о равноценных
+                сценам с диалогами.</span>Должен быть какой-то поворот. Должны быть мотивы.
+                <span class="text--highlight">Вы должны узнать что-то о персонаже в драке, чего не знали раньше.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="comment block_without_video">
+          <div class="comment__block">
+            <p class="comment__text">У Аманды очень честные диалоги, очень обоснованные эмоционально. Я помню момент,
+              когда мы с Алексом очень долго бились над последними словами, которые Джинкс говорит Вай в первом сезоне.
+              <span class="text--highlight">А потом Аманда взяла сценарий и всё решила.</span></p>
+            <p class="comment__commentator">Christian Linke</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="creators__content creators--bg-3">
+        <div class="title">
+          <p class="title__text">Аркейн: преодолевая ущелье | Часть 3 - «Серии убийств» и ключевые кадры</p>
+        </div>
+
+        <div class="comment block_without_video">
+          <div class="comment__block">
+            <p class="comment__text">Джинкс "заняла" дольше других персонажей. Думаю, мы искали актрису на Джинкс
+              примерно три года. Сложность в том, что<span class="text--highlight">надо найти кого-то, кто осилит
+                интимные, тихие моменты, очень трепетные для актерской игры. Но в то же время нужна была актриса,
+                которая сыграла бы и очень громкие моменты, которыми известна Джинкс.</span>И вы, как правило,
+              находите либо то, либо другое.</p>
+            <p class="comment__commentator">Christian Linke</p>
+          </div>
+        </div>
+
+        <div class="creator block_with_video">
+          <div class="video--block">
+            <iframe class="video" width="1280" height="692" src="https://www.youtube.com/embed/Qd1rOtu4SMI"
+                    title="Аркейн: преодолевая ущелье | Часть 3 - «Серии убийств» и ключевые кадры"
+                    frameborder="0" allowfullscreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+            </iframe>
+            <button class="video__open" onclick="togglePart3();">Смотреть в окне</button>
+          </div>
+          <div class="creation__part_3">
+            <iframe class="creation__video_3" width="1280" height="692" src="https://www.youtube.com/embed/Qd1rOtu4SMI"
+                    title="Аркейн: преодолевая ущелье | Часть 3 - «Серии убийств» и ключевые кадры"
+                    frameborder="0" allowfullscreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+            </iframe>
+            <button class="video__close" onclick="togglePart3();" type="button">
+              <i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="creator__card">
+            <div class="creator__img--block">
+              <img class="creator__img" src="images/ella_purnell.jpg" alt="no image">
+            </div>
+            <div class="creator__info">
+              <p class="creator__name">Ella Purnell</p>
+              <p class="creator__work">Актриса</p>
+              <p class="creator__description">голос Джинкс из «Аркейн»</p>
+            </div>
+          </div>
+          <div class="creator__block">
+            <div class="creator__text--block">
+              <p class="creator__text">Я почувствовала глубокую связь с ней, из-за сочувствия и сострадания, по
+                соображениям гуманности. Да, она ужасный человек и делала все эти ужасные вещи.
+                <span class="text--highlight">Но, в итоге, ужасный ли она человек? Я не знаю.</span>Я начала понимать
+                кем она стала -<span class="text--highlight">та Джинкс, которой она стала, - просто очень глубокая,
+                очень сложная реакция на травму. Она пережила то, что никто не должен был.</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="comment block_without_video">
+          <div class="comment__block">
+            <p class="comment__text"><span class="text--highlight">Мы все хотим перенести анимацию в поле взрослой
+              драматургии.</span>Точность и нюансы. Стиль и инновации. Всё это ещё не существует, и мы думаем, что
+              вместе сможем это создать.</p>
+            <p class="comment__commentator">Christian Linke</p>
+          </div>
+        </div>
+
+        <div class="creator block_without_video">
+          <div class="creator__card creator__card--width-big">
+            <div class="creator__img--block creator__img--block--width-big">
+              <img class="creator__img creator__img--width-big" src="images/Fortiche.jpg" alt="no image">
+            </div>
+            <div class="creator__info">
+              <p class="creator__name">Arnaud Delord, Jérôme Combe and Pascal Charrue</p>
+              <p class="creator__work">Основатели и главы анимационной студии "Fortiche"</p>
+              <p class="creator__description">Режиссеры сериала "Аркейн"</p>
+            </div>
+          </div>
+          <div class="creator__block">
+            <div class="creator__text--block">
+              <p class="creator__commentator">Jérôme Combe</p>
+              <p class="creator__text"><span class="text--highlight">Мы создаем смесь 2D и 3D.</span>Потому что 2D
+                эффекты создаются с частотой 12 кадров в секунду, а анимация - в ней 24 кадра, как в обычных фильмах,
+                получается смесь стилей.</p>
+              <p class="creator__commentator">Pascal Charrue</p>
+              <p class="creator__text">Идея состоит в том, чтобы каждый кадр превосходил по качеству созданное с помощью
+                классической 2D-анимации. И 3D позволяет нам это делать. А так же убедиться, что
+                <span class="text--highlight">каждый кадр, когда вы ставите на паузу ... концепт-арт, красивая
+                иллюстрация</span> -<a class="creator__gallery-link" href="../gallery_page/gallery_page.html#frames"
+                target="_blank" title="Галерея кадров из сериала">Галерея стоп-кадров</a>.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="creators__content creators--bg-4">
+        <div class="title">
+          <p class="title__text">Аркейн: преодолевая ущелье | Часть 4 - Музыкальные изгои</p>
+        </div>
+
+        <div class="comment block_without_video">
+          <div class="comment__block">
+            <p class="comment__text">Я верю, что<span class="text--highlight">то, что мы делаем с музыкой в первом сезоне
+              "Аркейна", ещё не делалось в сфере развлечений.И точка.</span></p>
+            <p class="comment__commentator">Christian Linke</p>
+          </div>
+        </div>
+
+        <div class="creator block_without_video">
+          <div class="creator__card">
+            <div class="creator__img--block">
+              <img class="creator__img" src="images/alex(mako)seaver.jpg" alt="no image">
+            </div>
+            <div class="creator__info">
+              <p class="creator__name">Alex (Mako) Seaver</p>
+              <p class="creator__work">Композитор, Автор песен</p>
+            </div>
+          </div>
+          <div class="creator__block">
+            <div class="creator__text--block">
+              <p class="creator__text">Каждый год для их Чемпионата, крупнейшего киберспортивного турнира, мы пишем гимн
+                - популярную поп-песню.<span class="text--highlight">"Legends Never Die" был первым написанным мной
+                гимном.</span></p>
+              <div class="audio__block">
+                <audio class="audio"
+                       src="music/Against%20The%20Current%20-%20Legends%20Never%20Die.mp3" controls>
+                </audio>
+              </div>
+              <p class="creator__text">Было очень трудно обходить диалоги и попадать в пиковые моменты, которые могут не
+                подходить под заданный темп</p>
+              <div class="audio__block">
+                <audio class="audio" src="music/bones_uk_Dirty_Little_Animals_Arcane.mp3" controls></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="comment block_without_video">
+          <div class="comment__block">
+            <p class="comment__text">Мы довольно быстро обнаружили, что будет сложно просто обратиться к артистам и
+              сказать: "Мы хотим создавать с вами музыку". И они скажут: "Круто, а когда это выйдет?". Мы ответим:
+              "Через два-три года", и они просто: "Забудьте". Так что вместо этого<span class="text--highlight">мы сами
+                написали песни и уже потом приглашали артистов либо спеть, либо изменить их под себя.</span></p>
+            <p class="comment__commentator">Christian Linke</p>
+          </div>
+        </div>
+
+        <div class="creator block_with_video">
+          <div class="video--block">
+            <iframe class="video" width="1280" height="692" src="https://www.youtube.com/embed/m-MtIYImERI"
+                    title="Аркейн: преодолевая ущелье | Часть 4 - Музыкальные изгои" frameborder="0" allowfullscreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+            </iframe>
+            <button class="video__open" onclick="togglePart4();">Смотреть в окне</button>
+          </div>
+          <div class="creation__part_4">
+            <iframe class="creation__video_4" width="1280" height="692" src="https://www.youtube.com/embed/m-MtIYImERI"
+                    title="Аркейн: преодолевая ущелье | Часть 4 - Музыкальные изгои" frameborder="0" allowfullscreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+            </iframe>
+            <button class="video__close" onclick="togglePart4();" type="button">
+              <i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="creator__card">
+            <div class="creator__img--block">
+              <img class="creator__img" src="images/alexander_temple.jpg" alt="no image">
+            </div>
+            <div class="creator__info">
+              <p class="creator__name">Alexander Temple</p>
+              <p class="creator__work">Композитор</p>
+            </div>
+          </div>
+          <div class="creator__block">
+            <div class="creator__text--block">
+              <p class="creator__text">Работая над темой, вы ищете что-то, что четко говорит, кто это. Например,
+                <span class="text--highlight">у нас есть персонаж, Силко. Он один из злодеев в сериале. Очень сложный
+                персонаж.</span>У него, конечно, есть, некоторые, весомые причины, но всё-таки он злодей.
+                <span class="text--highlight">Музыка, которую, я написал для него, совсем незлодейская. Она очень
+                приветливая, в каком-то смысле даже соблазнительная.</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="comment block_without_video">
+          <div class="comment__block">
+            <p class="comment__text"><span class="text--highlight">Мы очень хотели, чтобы у персонажей были свои
+              мелодии.</span>Вы должны чувствовать, что помните персонажа, как только слышите мелодию.
+              <span class="text--highlight">Они всегда здесь, иногда они мрачнее, иногда легче или быстрее, но они
+              всегда здесь.</span></p>
+            <p class="comment__commentator">Christian Linke</p>
+          </div>
+        </div>
+
+        <div class="comment comment_with_creator_card block_without_video">
+          <div class="creator__card">
+            <div class="creator__img--block">
+              <img class="creator__img" src="images/ray_chen0.jpg" alt="no image">
+            </div>
+            <div class="creator__info">
+              <p class="creator__name">Ray Chen</p>
+              <p class="creator__work">Скрипач</p>
+            </div>
+          </div>
+          <div class="comment__block">
+            <div class="comment__img--block">
+              <img class="comment__img" src="images/ray_arcane.jpg" alt="no image">
+              <img class="comment__img" src="images/ray_chen.jpg" alt="no image">
+            </div>
+            <p class="comment__text">Рэй играет в качестве солиста филармонии Лос-Анджелеса, в крупных оркестрах Европы,
+              в Лондоне.<span class="text--highlight">Он, наверное, первый классический скрипач, играющий на скрипке
+              Страдивари за 20$ миллионов в озвучке мультсериала.</span></p>
+            <p class="comment__commentator">Christian Linke</p>
+          </div>
+        </div>
+
+        <div class="comment block_without_video">
+          <div class="comment__block">
+            <p class="comment__text">Мы знали, что так же хотим создать особые моменты в каждой серии с помощью музыки.
+              И с редакторами и режиссерами "Fortiche"<span class="text--highlight">мы пытались найти момент, где музыка
+              возьмет верх и будет в центре внимания.</span></p>
+            <div class="audio__block">
+              <audio class="audio" src="music/Pusha%20T,%20Mako%20-%20Misfit%20Toys.mp3" controls></audio>
+            </div>
+            <p class="comment__commentator">Christian Linke</p>
+          </div>
+        </div>
+
+        <div class="comment block_without_video">
+          <div class="comment__block comment__block--color-blue">
+            <p class="comment__text">Как ни странно, изначально мы даже не думали, что эту песню исполнит Woodkid. Мы
+              пригласили его на другую, а он случайно услышал демо и такой: "Давай лучше спою эту".</p>
+            <p class="comment__text"><span class="text--highlight">И это было величайшее событие</span>, которое могло
+              произойти. Изначально я написал ее в стиле экшена,<span class="text--highlight">а он превратил в самую
+              леденящую душу струнную композицию, что я когда-либо слышал.</span></p>
+            <div class="audio__block">
+              <audio class="audio" src="music/Woodkid_-_Guns_for_Hire.mp3" controls></audio>
+            </div>
+            <p class="comment__commentator">Alex (Mako) Seaver</p>
+          </div>
+        </div>
+
+        <div class="creator block_with_video">
+          <div class="video--block">
+            <iframe class="video" width="1280" height="720" src="https://www.youtube.com/embed/OkscEokV238"
+                    title="Arcane | Ekko vs. Jinx" frameborder="0" allowfullscreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+            </iframe>
+            <button class="video__open" onclick="toggleClipJvsE();">Смотреть в окне</button>
+          </div>
+          <div class="creation__clip-JvsE">
+            <iframe class="creation__video-JvsE" width="1280" height="720" src="https://www.youtube.com/embed/OkscEokV238"
+                    title="Arcane | Ekko vs. Jinx" frameborder="0" allowfullscreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+            </iframe>
+            <button class="video__close" onclick="toggleClipJvsE();" type="button">
+              <i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="creator__card">
+            <div class="creator__img--block">
+              <img class="creator__img" src="images/Sebastien_Najand.jpg" alt="no image">
+            </div>
+            <div class="creator__info">
+              <p class="creator__name">Sebastien Najand</p>
+              <p class="creator__work">Автор песен</p>
+            </div>
+          </div>
+          <div class="creator__block">
+            <div class="creator__text--block">
+              <p class="creator__text">В "Аркейне" цель песни - сцена, определенная история.</p>
+              <p class="creator__text">Ещё одним прорывом была драка Джинкс и Экко. Мы придумали атмосферу, а насчёт
+                вокалиста, рэпера, решили: "У нас есть несколько очень крутых вариантов. Отправим им трек и посмотрим,
+                получится ли что-то подходящее".<span class="text--highlight">Все трое прислали очень крутой
+                результат.</span>Мы получили три демо и подумали: "Что мы можем сделать?".
+                <span class="text--highlight">Непростая задача... Как сделать из этих трёх крутых песен одну песню?..
+                Попробуем использовать все три!</span></p>
+              <div class="audio__block">
+                <audio class="audio"
+                       src="music/Denzel_Curry,_Gizzle,_Bren_%20Joy-Dynasties_and_%20Dystopia.mp3" controls>
+                </audio>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="comment comment_with_creator_card block_without_video">
+          <div class="creator__card">
+            <div class="creator__img--block creator__img--block--height-big">
+              <img class="creator__img creator__img--height-big" src="images/Lynn_Gunn.jpg" alt="no image">
+            </div>
+            <div class="creator__info">
+              <p class="creator__name">Lynn Gunn</p>
+              <p class="creator__work">Солистка рок-группы PVRIS</p>
+            </div>
+          </div>
+          <div class="comment__block">
+            <p class="comment__text">Последняя песня, которую мы придумали, и она была самой... сложной, да.
+              <span class="text--highlight">Концепт был амбициозным и трудновыполнимым.</span>Когда вы что-то начинаете,
+              зная: "Кстати, это важный момент для Вай... и... Джейса, как Чемпионов, и должно быть круто", вы просто...
+              вы будете сомневаться в каждом выборе, который делаете.<span class="text--highlight">Ожидания очень
+              высоки.</span></p>
+            <p class="comment__text">И кто-то посоветовал нам PVRIS, просто потому что она классно звучит.
+              <span class="text--highlight">И мы подумали: "Просто дадим ей делать свою работу".</span></p>
+            <div class="audio__block">
+              <audio class="audio" src="music/PVRIS_MIYAVI_-_Snakes_Arcane_League_of_Legends_.mp3" controls></audio>
+            </div>
+            <p class="comment__text">Это весьма круто. В духе Вай. Всё правильно. У нее есть даже бритый висок и кольцо
+              в
+              носу.<span class="text--highlight">Я подумал: "Она как Вай".</span></p>
+            <div class="comment__img--block">
+              <img class="comment__img" src="images/Lynn_Gunn0.jpg" alt="no image">
+              <img class="comment__img" src="images/Vi_Arcane.jpg" alt="no image">
+            </div>
+            <p class="comment__commentator">Christian Linke</p>
+          </div>
+        </div>
+
+        <div class="creator block_with_video">
+          <div class="video--block">
+            <iframe class="video" width="1280" height="544" src="https://www.youtube.com/embed/D9G1VOjN_84"
+                    title="Imagine Dragons x J.I.D - Enemy (from the series Arcane League of Legends)"
+                    frameborder="0" allowfullscreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+            </iframe>
+            <button class="video__open" onclick="toggleClipEnemy();">Смотреть в окне</button>
+          </div>
+          <div class="creation__clip-Enemy">
+            <iframe class="creation__video-Enemy" width="1280" height="544"
+                    src="https://www.youtube.com/embed/D9G1VOjN_84"
+                    title="Imagine Dragons x J.I.D - Enemy (from the series Arcane League of Legends)"
+                    frameborder="0" allowfullscreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+            </iframe>
+            <button class="video__close" onclick="toggleClipEnemy();" type="button">
+              <i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="creator__card creator__card--width-big">
+            <div class="creator__img--block creator__img--block--width-big">
+              <img class="creator__img creator__img--width-big" src="images/imagine_dragons.jpg" alt="no image">
+            </div>
+            <div class="creator__info">
+              <p class="creator__name">Imagine Dragons</p>
+              <p class="creator__work">Американская поп-рок-группа</p>
+              <p class="creator__description">Более 157 номинаций и 53 побед в различных музыкальных премиях</p>
+            </div>
+          </div>
+          <div class="creator__block">
+            <div class="creator__text--block">
+              <p class="creator__commentator">Daniel Coulter Reynolds (Вокалист и основатель рок-группы Imagine
+                Dragons)</p>
+              <p class="creator__text">На самом деле я играю за Вай в "League of Legends", так что, определенно,
+                ассоциации были. Играют трое из нас, ещё играют Платцман<span class="text-parentheses">(Daniel James
+                Platzman -Ударник и бэк-вокалист группы,Imagine Dragons)и Дэниел(Daniel Wayne "Wing" Sermon - Гитарист
+                группы Imagine Dragons)</span></p>
+              <p class="creator__text"><span class="text--highlight">Мы как-то... серьезно, опаздывали к выходу на сцену
+                перед десятками тысяч, может сотнями тысяч человек, потому что заканчивали рейтинговую игру</span>, и не
+                хотели, что бы нас забанили.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="creator block_without_video">
+          <div class="creator__card">
+            <div class="creator__img--block creator__img--block--width-big">
+              <img class="creator__img creator__img--width-big"
+                   src="images/imagine_dragons_A.jpg" alt="no image">
+            </div>
+            <div class="creator__info">
+              <p class="creator__description">Группа Imagine Dragons и рэпер J.I.D в "Аркейне"</p>
+            </div>
+          </div>
+          <div class="creator__block">
+            <div class="creator__text--block">
+              <p class="creator__commentator">Daniel Coulter Reynolds</p>
+              <p class="creator__text"><span class="text--highlight">Мы работаем с ними уже давно. Мы в сообществе годы.
+                И я обожаю Кристиана.</span>Мы сошлись, он рассказал, над чем работал. Показал кучу слайдов и
+                раскадровок. В то время "Аркейн был на ранней стадии, но мне хватило, чтобы понять динамику в отношениях
+                этих сестер, Вай и Джинкс.</p>
+              <p class="creator__text">Что касается "Enemy", думаю в жизни человека часто бывает так, что чувствуешь
+                себя одиноким, или чувствуешь изоляцию. А<span class="text--highlight">эта песня написана в изоляции, с
+                ощущением, что ты против всего мира.</span></p>
+              <div class="audio__block">
+                <audio class="audio" src="music/Imagine%20Dragons%20-%20Enemy%20(Feat.%20JID).mp3" controls></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="comment block_without_video">
+          <div class="comment__block comment__block--color-blue">
+            <p class="comment__text"><span class="text--highlight">Само собой разумеется, последняя сцена первого сезона
+              будет важной сценой.</span>Монтаж просто прекрасный, и, ещё на тот момент, они обрамили его потрясающей
+              песней Дэвида Боуи<span class="text-parentheses">(David Bowie - британский рок-музыкант, певец и автор
+              песен).</span>И говорят: "Алекс, а можешь написать нам песню для этого момента?". И я такой:
+              <span class="text--highlight">"Конечно, только словлю паническую атаку, схожу к психологу, а потом, как
+              сосредоточусь, напишу песню, соответствующую этому моменту".</span></p>
+            <p class="comment__text">То, как все начинается, с человека, просто оплакивающего...
+              <span class="text--highlight">В песне действительно был "голос Джинкс". Слова для песни пришли
+              быстро...</span>Кристиан давал нам обратную связь, и мы добились успеха.</p>
+            <div class="comment__img--block">
+              <img class="comment__img" src="images/ep9.jpg" alt="no image">
+              <img class="comment__img" src="images/jinx.jpg" alt="no image">
+              <img class="comment__img" src="images/ep9-0.jpg" alt="no image">
+            </div>
+            <p class="comment__text">А потом мы подумали:<span class="text--highlight">"Хорошо, в чьем исполнении мы бы
+              хотели это услышать?".</span></p>
+            <p class="comment__commentator">Alex (Mako) Seaver</p>
+          </div>
+        </div>
+
+        <div class="comment block_with_video comment_with_creator_card">
+          <div class="video--block">
+            <iframe class="video" width="1280" height="720" src="https://www.youtube.com/embed/I1klbTzBQpk"
+                    title="THE GAME AWARDS 2021: Sting Performs “What Could Have Been” from Netflix's “Arcane”"
+                    frameborder="0" allowfullscreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+            </iframe>
+            <button class="video__open" onclick="toggleClipSting();">Смотреть в окне</button>
+          </div>
+          <div class="creation__clip-Sting">
+            <iframe class="creation__video-Sting" width="1280" height="720"
+                    src="https://www.youtube.com/embed/I1klbTzBQpk"
+                    title="THE GAME AWARDS 2021: Sting Performs “What Could Have Been” from Netflix's “Arcane”"
+                    frameborder="0" allowfullscreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+            </iframe>
+            <button class="video__close" onclick="toggleClipSting();" type="button">
+              <i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="creator__card creator__card--width-big">
+            <div class="creator__img--block creator__img--block--width-big">
+              <img class="creator__img creator__img--width-big" src="images/sting.jpg" alt="no image">
+            </div>
+            <div class="creator__info">
+              <p class="creator__name">Sting</p>
+              <p class="creator__name">Gordon Matthew Thomas Sumner</p>
+              <p class="creator__work">Британский музыкант, певец и автор песен</p>
+            </div>
+          </div>
+          <div class="comment__block comment__block--color-blue">
+            <p class="comment__text">Стинг был первый в нашем списке. И мы смогли поговорить с ним и зацепить его идеей,
+              показать ему последовательность, и он был очень добр.<span class="text--highlight">И получилось именно то,
+              что мы и хотели - вознести этот момент над всеми прочими.</span></p>
+            <div class="audio__block">
+              <audio class="audio" src="music/Sting_-_What_Could_Have_Been.mp3" controls></audio>
+            </div>
+            <p class="comment__commentator">Alex (Mako) Seaver</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="creators__content creators--bg-5">
+        <div class="title">
+          <p class="title__text">Аркейн: преодолевая ущелье | Часть 5 - Мы сделали всё, что могли</p>
+        </div>
+
+        <div class="comment block_without_video">
+          <div class="comment__block">
+            <p class="comment__text"><span class="text--highlight">Довольно страшно осознавать, что ты работаешь над
+              чем-то, что не может провалиться. Нет такого варианта. Так что... ты просто сомневаешься во
+              всем.</span></p>
+            <p class="comment__commentator">Christian Linke</p>
+          </div>
+        </div>
+
+        <div class="creator block_with_video">
+          <div class="video--block">
+            <iframe class="video" width="1280" height="692" src="https://www.youtube.com/embed/n_dCEd5QRZg"
+                    title="Аркейн: преодолевая ущелье | Часть 5 - Мы сделали всё, что могли"
+                    frameborder="0" allowfullscreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+            </iframe>
+            <button class="video__open" onclick="togglePart5();">Смотреть в окне</button>
+          </div>
+          <div class="creation__part_5">
+            <iframe class="creation__video_5" width="1280" height="692" src="https://www.youtube.com/embed/n_dCEd5QRZg"
+                    title="Аркейн: преодолевая ущелье | Часть 5 - Мы сделали всё, что могли"
+                    frameborder="0" allowfullscreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+            </iframe>
+            <button class="video__close" onclick="togglePart5();" type="button">
+              <i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="creator__card creator__card--width-big">
+            <div class="creator__img--block creator__img--block--width-big">
+              <img class="creator__img creator__img--width-big" src="images/brand_and_eliot.png" alt="no image">
+            </div>
+            <div class="creator__info">
+              <p class="creator__name">Brad Beaumont и Eliot Connors</p>
+              <p class="creator__work">Звукорежиссеры, Звуковые редакторы</p>
+            </div>
+          </div>
+          <div class="creator__block">
+            <div class="creator__text--block">
+              <p class="creator__commentator">Eliot Connors</p>
+              <p class="creator__text"><span class="text--highlight">Это награды MPSE</span>(Motion Picture Sound
+                Editors — это первоклассная организация для профессионалов в области редактирования звука).Эта за
+                "Бегущего по лезвию", а эта - игру "Resident Evil".<span class="text--highlight">Надеюсь, будет ещё
+                третья, когда вы вернетесь снимать второй сезон.</span></p>
+              <p class="creator__text">Любой саунд-дизайнер может создавать невероятные звуки, но чтобы создать ясность
+                и рассказать историю, которую пытается передать режиссер, вы должны уметь много проворачивать, улучшать,
+                подгонять.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="comment block_without_video">
+          <div class="comment__block">
+            <p class="comment__text">Fortiche", Арно и Паскаль, я очень, очень им доверяю. Они всё правильно понимают,
+              они готовы на всё ради качества.., такая страсть.</p>
+            <p class="comment__text"><span class="text--highlight">Если "Аркейном" мы сможем добиться чего-то больше
+              развлечения, если будут хорошие вопросы, которыми можно задаться и найти ответы, это, я думаю, лучшее, что
+              может сделать "Аркейн".</span></p>
+            <p class="comment__commentator">Christian Linke</p>
+          </div>
+        </div>
+
+        <div class="creator block_without_video">
+          <div class="creator__card creator__card--width-big">
+            <div class="creator__img--block creator__img--block--width-big">
+              <img class="creator__img creator__img--width-big" src="images/brandon_and_mark.jpg" alt="no image">
+            </div>
+            <div class="creator__info">
+              <p class="creator__name">Marc Merrill и Brandon Beck</p>
+              <p class="creator__work">Основатели Riot Games</p>
+            </div>
+          </div>
+          <div class="creator__block">
+            <div class="creator__text--block">
+              <p class="creator__commentator">Marc Merrill</p>
+              <p class="creator__text"><span class="text--highlight">Это будет первый медиапродукт в мировой истории,
+                который везде запуститься одновременно.</span>И мы смогли договориться с Netflix и Amazon, стать
+                партнерами - мы ведём трансляцию на Twitch и позволяем игрокам транслировать её.
+                <span class="text--highlight">Безумные вещи, возможные только в "Riot", впервые в мире.</span></p>
+              <p class="creator__commentator">Brandon Beck</p>
+              <p class="creator__text"><span class="text--highlight">Когда Кристиан прислал мне первую версию последних
+                пяти минут третьей серии,.. я заревел</span>, я не плакал, а именно ревел. Это было
+                <span class="text-parentheses">(не может сдержать эмоции)</span>... Простите, даже думать об этом ...
+                Простите. Столько эмоций. Сейчас, в основном, - благодарность.</p>
+              <p class="creator__text">Я так горд этой командой... Превосходность сериала настолько превзошла мои
+                ожидания.., a уж<span class="text--highlight">я-то знаю насколько безумным было это восхождение.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="comment block_without_video">
+          <div class="comment__block">
+            <p class="comment__text">Недавно я был на ужине с режиссерами "Fortiche", и<span class="text--highlight">они
+              сказали, что теперь счастливы, потому что когда пришли в индустрию, они хотели стоздать что-то, что войдет
+              в историю мира анимации.</span>Они улыбались и говорили, что после шести лет огромное облегчение -
+              чувствовать и знать, что они работали над чем-то, что стало частью истории анимации.</p>
+            <div class="comment__img--block">
+              <img class="comment__img comment__img--size-big" src="images/arcane_review/review.png" alt="no image">
+            </div>
+            <p class="comment__commentator">Christian Linke</p>
+          </div>
+        </div>
+
+        <div class="creator block_without_video">
+          <div class="creator__card">
+            <div class="creator__img--block">
+              <img class="creator__img" src="images/Christian_Linke1.jpg" alt="no image">
+            </div>
+            <div class="creator__info">
+              <p class="creator__name">Christian Linke</p>
+              <p class="creator__work">Legend</p>
+            </div>
+          </div>
+          <div class="creator__block">
+            <div class="creator__text--block">
+              <p class="creator__text"><span class="text--highlight">Я присоединился к "Riot" потому что обожал играть в
+                их игру.</span>Когда мы с Алексом начали обсуждать создание чего-то типа "Аркейна", мы решили, что он
+                должен быть, потму что мы хотим его посмотреть.<span class="text--highlight">Мы любим этих персонажей.
+                  Мы любим эти миры.</span></p>
+              <p class="creator__text">Думаю, мое любимое в "Аркейне" - то, что я с уверенностью могу сказать, что над
+                "Аркейном" прямо сейчас работает множество людей, и<span class="text--highlight">они чувствуют, что
+                работают над самой важной вещью в жизни и карьере.</span> Люди чувствуют вызов, понимают, что работают
+                над чем-то значимым.<span class="text--highlight">Они обернутся и скажут: "Да, это момент гордости. Я
+                рад, что работал над этим". Для меня это, наверное, самое главное.</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <div class="title title--empty"></div>
+
+    <div class="quote">
+      <p class="quote__text">Правда - это рассказ тех, кто выжил</p>
+      <p class="quote__author">- "Аркейн", первый сезон, пятая серия</p>
+    </div>
+
+    <script src="js/creators_video-open.js"></script>
+
+    <button class="scroll-top scroll-top--waves scroll-top--animation" type="button">
+      <i class="fa-solid fa-chevron-up"></i></button>
+    <script src="../js/button__scroll-top.js"></script>
+
+    <footer class="footer">
+      <div class="footer__block">
+        <div class="footer__content footer__netflix-block">
+          <p class="footer__text--netflix">Уже доступно на</p>
+          <a href="https://www.netflix.com/by-ru/title/81435684" target="_blank" title="Смотреть на Netflix">
+            <img class="footer__image--netflix" src="../images/footer/netflix-logo-vector.svg" alt="no image">
+          </a>
+        </div>
+        <div class="footer__content footer__networks-block">
+          <a class="footer__network" href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a class="footer__network" href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a class="footer__network" href="#" title="VK"><i class="fa-brands fa-vk"></i></a>
+          <a class="footer__network" href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a class="footer__network" href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <div class="footer__content">
+          <a href="https://www.riotgames.com/en" target="_blank" title="riotgames.com">
+            <img class="footer__image--riot" src="../images/footer/riot.png" alt="no image">
+          </a>
+        </div>
+        <div class="footer__content footer__text-block">
+          <p class="footer__text">© 2021 Riot Games, Inc. ARCANE LEAGUE OF LEGENDS и все связанные с ним логотипы
+            являются товарными знаками, знаками обслуживания и/или зарегистрированными товарными знаками Riot Games,
+            Inc.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

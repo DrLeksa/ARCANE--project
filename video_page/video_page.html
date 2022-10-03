@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Arcane: League of Legends</title>
+    <link rel="shortcut icon" href="../images/main-icon.png">
+    <link rel="stylesheet" href="../icons/fontawesome/all.min.css" type="text/css">
+    <link rel="stylesheet" href="../general_style.css" type="text/css">
+    <link rel="stylesheet" href="video_style.css" type="text/css">
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header__navigation">
+        <a class="header__link button_ripple" href="video_page.html" title="Трейлеры и Сериал">
+          <p class="header__text">Видео</p></a>
+        <a class="header__link button_ripple" href="../gallery_page/gallery_page.html" title="Галерея">
+          <p class="header__text">Иллюстрации</p></a>
+        <a class="header__link header__logo-link" href="../main_page.html" title="Главная страница">
+          <div class="header__logo">
+            <div class="header__letter--block">
+              <img class="header__letter" src="../images/img_decor/arcane-logo-a-1.png" alt="no image">
+            </div>
+            <div class="header__letter--block header__letter--display-none">
+              <img class="header__letter" src="../images/img_decor/arcane-logo-r.png" alt="no image">
+            </div>
+            <div class="header__letter--block header__letter--display-none">
+              <img class="header__letter" src="../images/img_decor/arcane-logo-c.png" alt="no image">
+            </div>
+            <div class="header__letter--block header__letter--display-none">
+              <img class="header__letter" src="../images/img_decor/arcane-logo-a-2.png" alt="no image">
+            </div>
+            <div class="header__letter--block header__letter--display-none">
+              <img class="header__letter" src="../images/img_decor/arcane-logo-n.png" alt="no image">
+            </div>
+            <div class="header__letter--block header__letter--display-none">
+              <img class="header__letter" src="../images/img_decor/arcane-logo-e.png" alt="no image">
+            </div>
+          </div>
+        </a>
+        <a class="header__link button_ripple" href="../creators_page/creators_page.html" title="Как создавался Аркейн">
+          <p class="header__text">Создание</p></a>
+        <a class="header__link button_ripple" href="#" title="История мира"><p class="header__text">История</p></a>
+      </div>
+    </header>
+    <script src="../js/button_ripple.js"></script>
+
+    <section class="video-section">
+      <div class="video-section__video--block">
+        <video id="video" class="video-section__video" autoplay muted loop preload
+               src="video/ARC_Finaltrailer_Webclip.mp4" typeof="video/mp4">
+        </video>
+      </div>
+      <div class="video-section__logo--block">
+        <div class="video-section__text--block">
+          <p class="video-section__text">Riot Games представляет</p>
+        </div>
+        <div class="video-section__logo">
+          <div class="video__letter--block">
+            <img class="video-section__letter--size-big" src="../images/img_decor/arcane-logo-a-1.png" alt="no image">
+          </div>
+          <div class="video__letter--block">
+            <img class="video-section__letter--size-big" src="../images/img_decor/arcane-logo-r.png" alt="no image">
+          </div>
+          <div class="video__letter--block">
+            <img class="video-section__letter--size-big" src="../images/img_decor/arcane-logo-c.png" alt="no image">
+          </div>
+          <div class="video__letter--block">
+            <img class="video-section__letter--size-big" src="../images/img_decor/arcane-logo-a-2.png" alt="no image">
+          </div>
+          <div class="video__letter--block">
+            <img class="video-section__letter--size-big" src="../images/img_decor/arcane-logo-n.png" alt="no image">
+          </div>
+          <div class="video__letter--block">
+            <img class="video-section__letter--size-big" src="../images/img_decor/arcane-logo-e.png" alt="no image">
+          </div>
+        </div>
+        <div class="video-section__game-logo--block">
+          <img class="video-section__game-logo" src="../images/img_decor/lol-logo.png" alt="no image">
+        </div>
+      </div>
+      <button id="button" class="video-section__button" onclick="playVideo()">
+        <i class="fa-light fa-circle-pause"></i>
+        <p class="video-section__button-text"></p>
+      </button>
+    </section>
+    <script src="js/video_bg-pause.js"></script>
+
+    <section class="trailers">
+      <div class="trailers__block">
+        <div class="trailer__link" onclick="toggleFirst();">
+          <img class="trailer__image" src="images/arcane_1season.jpg" alt="no image">
+          <div class="trailer__text--block">
+            <div class="trailer__text">Смотреть 1 трейлер</div>
+            <div class="trailer__icon"><i class="fa-solid fa-circle-play"></i></div>
+          </div>
+        </div>
+        <div class="trailer__link" onclick="toggleSecond();">
+          <img class="trailer__image" src="images/arcane_2season.jpg" alt="no image">
+          <div class="trailer__text--block">
+            <div class="trailer__text">Смотреть 2 трейлер</div>
+            <div class="trailer__icon"><i class="fa-solid fa-circle-play"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="trailer__first-video--block trailer__video-close">
+      <iframe class="trailer__first-video" width="1903" height="768" src="https://www.youtube.com/embed/zUIu11b_pWw"
+              title="Аркейн (1 сезон) — Русский трейлер (2021)" frameborder="0" allowfullscreen
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+      </iframe>
+      <button class="trailer__close" onclick="toggleFirst();" type="button"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="trailer__second-video--block trailer__video-close">
+      <iframe class="trailer__second-video" width="1903" height="768" src="https://www.youtube.com/embed/PilxSMg5Y4E"
+              title="Аркейн – Дублированный трейлер" frameborder="0" allowfullscreen
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+      </iframe>
+      <button class="trailer__close" onclick="toggleSecond();" type="button"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <script src="js/video_trailers-open.js"></script>
+
+    <section class="series">
+      <div class="series__block">
+        <a class="series__link" href="https://www.netflix.com/by-ru/title/81435684" target="_blank"
+           title="Смотреть на Netflix">
+          <div class="series__image-block">
+            <img class="series__image" src="images/1_season.jpg" alt="no image">
+          </div>
+          <div class="series__content-block">
+            <p class="series__icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+            <p class="series_title">Вышла первая глава "Аркейна"!</p>
+            <p class="series__text">Смотрите первую главу "Аркейна" на
+              <span class="series_text--hover">Netflix</span>.
+            </p>
+          </div>
+        </a>
+        <a class="series__link" href="https://www.netflix.com/by-ru/title/81435684" target="_blank"
+           title="Смотреть на Netflix">
+          <div class="series__image-block">
+            <img class="series__image" src="images/2_season.jpg" alt="no image">
+          </div>
+          <div class="series__content-block">
+            <p class="series__icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+            <p class="series_title">Вышла вторая глава "Аркейна"!</p>
+            <p class="series__text">Смотрите вторую главу "Аркейна" на
+              <span class="series_text--hover">Netflix</span>.
+            </p>
+          </div>
+        </a>
+        <a class="series__link" href="https://www.netflix.com/by-ru/title/81435684" target="_blank"
+           title="Смотреть на Netflix">
+          <div class="series__image-block">
+            <img class="series__image" src="images/3_season.jpg" alt="no image">
+          </div>
+          <div class="series__content-block">
+            <p class="series__icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+            <p class="series_title">Вышла третья глава "Аркейна"!</p>
+            <p class="series__text">Смотрите третью главу "Аркейна" на
+              <span class="series_text--hover">Netflix</span>.
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <button class="scroll-top scroll-top--waves scroll-top--animation" type="button">
+      <i class="fa-solid fa-chevron-up"></i></button>
+    <script src="../js/button__scroll-top.js"></script>
+
+    <footer class="footer">
+      <div class="footer__block">
+        <div class="footer__content footer__netflix-block">
+          <p class="footer__text--netflix">Уже доступно на</p>
+          <a href="https://www.netflix.com/by-ru/title/81435684" target="_blank" title="Смотреть на Netflix">
+            <img class="footer__image--netflix" src="../images/footer/netflix-logo-vector.svg" alt="no image">
+          </a>
+        </div>
+        <div class="footer__content footer__networks-block">
+          <a class="footer__network" href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a class="footer__network" href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a class="footer__network" href="#" title="VK"><i class="fa-brands fa-vk"></i></a>
+          <a class="footer__network" href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a class="footer__network" href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <div class="footer__content">
+          <a href="https://www.riotgames.com/en" target="_blank" title="riotgames.com">
+            <img class="footer__image--riot" src="../images/footer/riot.png" alt="no image">
+          </a>
+        </div>
+        <div class="footer__content footer__text-block">
+          <p class="footer__text">© 2021 Riot Games, Inc. ARCANE LEAGUE OF LEGENDS и все связанные с ним логотипы
+            являются товарными знаками, знаками обслуживания и/или зарегистрированными товарными знаками Riot Games,
+            Inc.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
