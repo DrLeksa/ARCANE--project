@@ -2,17 +2,7 @@ body {
   background-image: url(images/bg.jpg);
 }
 
-.character-gallery--section {
-  display: flex;
-  font-size: 1rem;
-  height: 100vh;
-}
-
-.character-gallery__link {
-  width: 25%;
-  cursor: pointer;
-  transition: all .5s ease-out;
-}
+/*анимации при загрузке страницы*/
 
 .character-gallery--jinx {
   animation: width 2s;
@@ -20,13 +10,13 @@ body {
 
 @keyframes width {
   0% {
+    z-index: 1;
     width: 70%;
-    z-index: 10;
   }
 
   100% {
+    z-index: 1;
     width: 25%;
-    z-index: 10;
   }
 }
 
@@ -36,8 +26,12 @@ body {
 }
 
 @keyframes translateX {
-  0% {transform: translateX(596px);}
-  100% {transform: translateX(0);}
+  0% {
+    transform: translateX(596px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .character-gallery--silco,
@@ -46,19 +40,39 @@ body {
 }
 
 @keyframes minusTranslateX {
-  0% {transform: translateX(-596px);}
-  100% {transform: translateX(0);}
+  0% {
+    transform: translateX(-596px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* character-gallery */
+
+.character-gallery--section {
+  display: flex;
+  height: 100vh;
+  font-size: 1rem;
+}
+
+.character-gallery__link {
+  width: 25%;
+  cursor: pointer;
+  transition: all .5s ease-out;
 }
 
 .character-gallery__image {
   width: 100%;
-  object-fit: cover;
   height: 100%;
+  object-fit: cover;
 }
 
+/* стили для gallery_hover.js */
+
 .hover {
-  filter: none;
   width: 48%;
+  filter: none;
 }
 
 .not-hover {
@@ -69,22 +83,22 @@ body {
 
 .gallery {
   position: fixed;
+  z-index: 1;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.9);
-  width: 100%;
-  height: 100%;
-  font-size: 1rem;
   display: flex;
-  justify-content: center;
   align-items: center;
-  transition-duration: .3s;
-  visibility: hidden;
-  opacity: 0;
+  justify-content: center;
   flex-wrap: wrap;
   align-content: center;
-  z-index: 1;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.9);
+  font-size: 1rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s;
 }
 
 .gallery--caitlyn.visible,
@@ -97,31 +111,31 @@ body {
 }
 
 .gallery__close {
+  position: fixed;
+  z-index: 3;
+  top: 30px;
+  right: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed;
-  top: 30px;
-  right: 30px;
-  cursor: pointer;
   width: 40px;
-  color: black;
-  background-color: white;
   height: 40px;
   border-radius: 13px;
-  font-size: 1em;
-  transition-duration: .5s;
-  z-index: 3;
   box-shadow: 4px 4px 15px 0 rgb(0 0 0 / 50%);
+  background-color: white;
+  color: black;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all .5s;
 }
 
 .gallery__close:hover {
   padding: 0.3em 0.3em 0.3em;
   border: 1px solid white;
-  color: white;
-  background-color: black;
-  box-shadow: 7px 7px 20px 0 rgb(0 0 0 / 70%);
   border-radius: 0;
+  box-shadow: 7px 7px 20px 0 rgb(0 0 0 / 70%);
+  background-color: black;
+  color: white;
   font-size: 1.6em;
 }
 
@@ -130,20 +144,20 @@ body {
 }
 
 .gallery__card {
-  border: 3px solid black;
-  border-radius: 5px;
   position: relative;
   width: 550px;
-  margin: 0.4em;
   height: 250px;
+  border: 3px solid black;
+  border-radius: 5px;
+  margin: 0.4em;
   box-shadow: 3px 5px 10px 2px rgb(0 0 0);
   cursor: pointer;
-  transition: .5s;
+  transition: all .5s;
 }
 
 .gallery__card:hover {
-  transform: scale(1.03);
   z-index: 2;
+  transform: scale(1.03);
 }
 
 .gallery__image {
@@ -153,64 +167,66 @@ body {
   object-fit: cover;
 }
 
+/* slider */
+
 .slider {
-  opacity: 0;
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.9);
   pointer-events: none;
-  z-index: 2;
+  opacity: 0;
 }
 
 .slider__container {
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
   width: 80vw;
   height: 80vh;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
 }
 
 .active {
-  opacity: 1;
   pointer-events: all;
+  opacity: 1;
 }
 
 .slider__button {
-  display: inline-block;
   position: absolute;
+  z-index: 2;
   top: 50%;
-  transform: translateY(-50%);
-  background: none;
+  display: inline-block;
+  padding: 0.2em 0.4em;
   border: 1px solid #575757;
   border-radius: 38px;
-  padding: 0.2em 0.4em;
-  transition: all .4s;
+  transform: translateY(-50%);
   box-shadow: 4px 4px 15px 0 rgb(0 0 0 / 50%);
+  background: none;
   color: white;
   font-size: 1.7em;
-  z-index: 2;
   cursor: pointer;
+  transition: all .4s;
 }
 
 .slider__button:hover {
+  box-shadow: 7px 7px 20px 0 rgb(0 0 0 / 70%);
   background-color: white;
   color: black;
-  box-shadow: 7px 7px 20px 0 rgb(0 0 0 / 70%);
 }
 
 .slider__left-button {
   left: -70px;
-  transition-duration: .5s;
+  transition: all .5s;
 }
 
 .slider__right-button {
   right: -70px;
-  transition-duration: .5s;
+  transition: all .5s;
 }
 
 .slider__left-button:active {
@@ -223,16 +239,16 @@ body {
 
 .slider__close {
   position: absolute;
+  z-index: 2;
   right: -60px;
   top: -60px;
   padding: 0 0.3em;
-  color: white;
-  background: none;
   border: none;
+  background: none;
+  color: white;
   font-size: 2em;
-  z-index: 2;
   cursor: pointer;
-  transition-duration: .5s;
+  transition: all .5s;
 }
 
 .slider__close:hover {
@@ -242,6 +258,81 @@ body {
 .slider__close:active {
   transform: scale(1);
 }
+
+/*frames*/
+
+.frames {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+  font-size: 1rem;
+}
+
+.frames__carousel {
+  overflow: hidden;
+  height: 540px;
+}
+
+.frames__image-container {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.frames__image {
+  width: 635px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.frames__buttons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.frames__button {
+  display: inline-block;
+  overflow: hidden;
+  width: 80px;
+  padding: 0.5rem 1.2em;
+  border: 1px solid black;
+  margin: 0 1em;
+  box-shadow: 2px 2px 9px 0 rgb(0 0 0 / 80%);
+  background-color: rgba(30, 30, 30, 0.9);
+  color: white;
+  font-size: .9em;
+  font-weight: bold;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.frames__button:hover {
+  width: 140px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+}
+
+#left-button:active {
+  color: black;
+  transform: translateX(-10px);
+}
+
+#right-button:active {
+  color: black;
+  transform: translateX(10px);
+}
+
+  /* просто блок для разделения */
+
+.border {
+  width: 100%;
+  height: 25px;
+  box-shadow: 0 10px 31px 10px rgb(0 0 0);
+  background-image: url(../images/img_decor/header_bg.jpg);
+  background-size: contain;
+}
+
+/* @media */
 
 @media (max-width: 1200px) {
   .slider__container {
@@ -263,8 +354,8 @@ body {
   }
 
   .slider__close {
-    right: -35px;
     top: -35px;
+    right: -35px;
   }
 }
 
@@ -273,75 +364,3 @@ body {
     height: 27vh;
   }
 }
-
-/*frames*/
-
-.frames {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 3em;
-  font-size: 1rem;
-}
-
-.frames__carousel {
-  height: 540px;
-  overflow: hidden;
-}
-
-.frames__image-container {
-  display: flex;
-  transform: translateX(0);
-  transition: transform 0.5s ease-in-out;
-}
-
-.frames__image {
-  width: 635px;
-  height: 500px;
-  object-fit: cover;
-}
-
-.frames__buttons-container {
-  display: flex;
-  justify-content: center;
-}
-
-.frames__button {
-  cursor: pointer;
-  margin: 0 1em;
-  width: 80px;
-  display: inline-block;
-  overflow: hidden;
-  padding: 0.5rem 1.2em;
-  font-size: .9em;
-  font-weight: bold;
-  border: 1px solid black;
-  color: white;
-  background-color: rgba(30, 30, 30, 0.9);
-  transition: all .3s;
-  box-shadow: 2px 2px 9px 0 rgb(0 0 0 / 80%);
-}
-
-.frames__button:hover {
-  width: 140px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
-}
-
-#left-button:active {
-  transform: translateX(-10px);
-  color: black;
-}
-
-#right-button:active {
-  transform: translateX(10px);
-  color: black;
-}
-
-.border {
-  width: 100%;
-  height: 25px;
-  background-image: url(../images/img_decor/header_bg.jpg);
-  background-size: contain;
-  box-shadow: 0 10px 31px 10px rgb(0 0 0);
-}
-

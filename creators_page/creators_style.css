@@ -4,55 +4,63 @@ body {
   overflow-x: hidden;
 }
 
+.footer {
+  margin: 0;
+}
+
+/*анимации при загрузке страницы*/
+
 .header,
 .quote,
-.creators {
+.creators--bg-1 {
   animation: opacity 1.5s ease-in;
 }
 
-@keyframes opacity {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+.title,
+.creator {
+  animation: transformY 1.5s;
 }
 
-.box {
-  transform: translateX(200%);
-  transition: transform 1s ease;
-}
-
-.box.show {
-  transform: translateX(0);
+@keyframes transformY {
+  0% {
+    transform: translateY(5%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /* quote */
 
 .quote {
-  width: 48%;
-  margin: 1em auto;
-  padding: 1.5em 0;
-  text-align: center;
-  font-style: italic;
-  font-size: 1rem;
   position: relative;
-  text-shadow: 2px 2px 1px rgb(0 0 0);
+  width: 48%;
+  padding: 1.5em 0;
+  margin: 1em auto;
   color: white;
+  font-size: 1rem;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px 1px rgb(0 0 0);
 }
 
 .quote:before {
   content: "\201C";
-  font-size: 6em;
-  color: black;
-  font-family: serif;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  color: black;
+  font-size: 6em;
+  font-family: serif;
   text-shadow: 1px 1px 1px rgb(255, 255, 255);
 }
 
 .quote__text {
-  font-size: 1.5em;
   margin-top: 1em;
+  font-size: 1.5em;
 }
 
 .quote__author {
@@ -99,14 +107,14 @@ body {
 
 
 .title {
-  color: white;
-  text-align: center;
   width: 100%;
+  box-shadow: 7px 7px 20px 0 rgb(0 0 0 / 100%);
   background-image: url(../images/img_decor/header_bg.jpg);
   background-size: contain;
+  color: white;
   font-size: 1.3em;
   font-family: 'Oswald', sans-serif;
-  box-shadow: 7px 7px 20px 0 rgb(0 0 0 / 100%);
+  text-align: center;
 }
 
 .title--empty {
@@ -115,9 +123,9 @@ body {
 
 .title__text {
   padding: .5em;
+  color: #d2d2d2;
   font-weight: bold;
   letter-spacing: .02em;
-  color: #d2d2d2;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
@@ -125,13 +133,13 @@ body {
 
 .creator,
 .comment {
-  margin: 1em 0;
   display: flex;
   width: 100%;
+  margin: 1em 0;
   align-items: center;
 }
 
-/* для блоков с видео */
+/* для блоков с видео (они в creator) */
 
 .block_with_video { /* для блока с видео (другое расположение внутри) */
   width: 100%;
@@ -143,41 +151,41 @@ body {
 
 .video--block {
   display: flex;
-  margin: 0 1em;
-  border-radius: 20px;
-  height: 310px;
   flex-direction: column;
   align-items: center;
+  height: 310px;
+  margin: 0 1em;
+  border-radius: 20px;
 }
 
 .video {
-  border: 1px solid wheat;
   width: 550px;
   height: 275px;
+  border: 1px solid wheat;
   border-radius: 20px;
   box-shadow: 7px 7px 20px 0 rgb(0 0 0 / 70%);
 }
 
 .video__open {
-  margin: .3em;
+  overflow: hidden;
   padding: 0.2em 1em;
-  font-size: .9em;
-  cursor: pointer;
-  color: white;
-  background-color: rgba(47, 47, 47, 0.9);
-  border: 1px solid wheat;
+  border: 1px solid black;
   border-radius: 5px;
-  transition: all .5s;
+  margin: .3em;
+  box-shadow: 2px 2px 9px 0 rgb(0 0 0 / 80%);
+  background-color: rgba(30, 30, 30, 0.9);
+  color: #cbcbcb;
+  font-size: .9em;
   text-shadow: 2px 2px 1px rgb(0 0 0);
-  box-shadow: 4px 4px 15px 0 rgb(0 0 0 / 50%);
+  cursor: pointer;
+  transition: all .5s;
 }
 
 .video__open:hover {
-  border: 1px solid black;
-  color: black;
-  background-color: wheat;
-  text-shadow: 1px 1px 1px rgb(255, 255, 255);
+  border: 1px solid white;
   box-shadow: 7px 7px 20px 0 rgb(0 0 0 / 70%);
+  background-color: #151515;
+  text-shadow: 1px 1px 1px rgb(79, 79, 79);
 }
 
 .video__open:active {
@@ -188,11 +196,11 @@ body {
 
 .creator__block {
   display: flex;
-  margin: 1em;
-  background-color: rgba(47, 47, 47, 0.6);
   border: 1px solid wheat;
   border-radius: 20px;
+  margin: 1em;
   box-shadow: 7px 7px 20px 0 rgb(0 0 0 / 70%);
+  background-color: rgba(47, 47, 47, 0.6);
   transition: all .5s ease-out;
 }
 
@@ -203,31 +211,22 @@ body {
 .creator__card {
   position: relative;
   border: 1px solid transparent;
-  transition: all .5s ease-out;
   border-radius: 20px;
+  transition: all .5s ease-out;
 }
 
 .creator__card:hover {
+  z-index: 1;
   transform: scale(1.5);
   border: 1px solid white;
   border-radius: 20px 20px 0 0;
   background-color: rgba(0, 0, 0, 0.95);
   color: white;
-  z-index: 1;
-}
-
-.creator__card:hover:hover .creator__work,
-.creator__card:hover:hover .creator__description {
-  color: #b2b2b2;
-}
-
-.creator__card:hover .creator__link {
-  display: block;
 }
 
 .creator__img--block {
-  margin: 0.5em 0.5em 0 0.5em;
   width: 210px;
+  margin: 0.5em 0.5em 0 0.5em;
   text-align: center;
   transition: all .5s ease-out;
 }
@@ -243,8 +242,8 @@ body {
 .creator__img {
   width: 200px;
   height: 200px;
-  border-radius: 15px;
   border: 1px solid transparent;
+  border-radius: 15px;
   box-shadow: 7px 7px 20px 0 rgb(0 0 0 / 70%);
 }
 
@@ -263,29 +262,29 @@ body {
 
 .creator__info {
   position: absolute;
-  visibility: hidden;
-  opacity: 0;
+  margin-bottom: 0.3em;
   font-size: 0;
   text-align: center;
-  margin-bottom: 0.3em;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
-  transition: all .2s;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .1s;
 }
 
 .creator__card:hover .creator__info {
-  visibility: visible;
   position: absolute;
-  opacity: 1;
+  right: -1px;
+  left: -1px;
   width: -webkit-fill-available;
-  font-size: 1em;
-  text-align: center;
   border: 1px solid white;
   border-top: 0;
   border-radius: 0 0 20px 20px;
   background-color: rgba(0, 0, 0, 0.95);
   color: white;
-  right: -1px;
-  left: -1px;
+  font-size: 1em;
+  text-align: center;
+  visibility: visible;
+  opacity: 1;
 }
 
 .creator__name {
@@ -297,13 +296,13 @@ body {
 
 .creator__name:after {
   content: "";
-  display: block;
   position: relative;
   z-index: 1;
+  display: block;
   width: 0;
-  margin: auto;
-  border-bottom: 4px double #fff;
   bottom: 2px;
+  border-bottom: 4px double #fff;
+  margin: auto;
   transition: all .5s ease-out;
 }
 
@@ -322,6 +321,11 @@ body {
   transition: all .2s ease-out;
 }
 
+.creator__card:hover .creator__work,
+.creator__card:hover .creator__description {
+  color: #b2b2b2;
+}
+
 .creator__link {  /* в 1 части, втором блоке creator есть ссылка */
   display: none;
   transition: transform .5s;
@@ -331,12 +335,16 @@ body {
   transform: scale(1.1);
 }
 
+.creator__card:hover .creator__link {
+  display: block;
+}
+
 .creator__gallery-link {  /* в 3 части, последнем блоке есть ссылка */
+  color: white;
+  font-weight: bold;
+  font-style: italic;
   text-decoration: none;
   text-shadow: 3px 1px 1px rgb(0 0 0);
-  color: white;
-  font-style: italic;
-  font-weight: bold;
 }
 
 .creator__gallery-link:hover {
@@ -344,25 +352,25 @@ body {
 }
 
 .creator__logo {  /* и есть логотип */
-  object-fit: cover;
-  padding-top: .4em;
   width: 120px;
   height: 48px;
+  padding-top: .4em;
+  object-fit: cover;
 }
 
 .creator__text--block {
   display: flex;
-  margin: 0.5em;
   flex-direction: column;
   justify-content: center;
+  margin: 0.5em;
 }
 
 .creator__commentator { /* для блоков где несколько комментаторов */
+  padding: 0.5em;
   color: white;
   font-weight: bold;
   font-style: italic;
   text-decoration: underline;
-  padding: 0.5em;
   text-shadow: 2px 0 1px rgb(0 0 0)
 }
 
@@ -390,7 +398,7 @@ body {
   text-shadow: 2px 2px 1px rgb(46, 2, 58);
 }
 
-.text-parentheses {  /* -- текст в скобках */
+.text-parentheses {      /* текст в скобках */
   font-style: italic;
 }
 
@@ -412,26 +420,26 @@ body {
 }
 
 .comment__block {
-  margin: 0 1em;
-  height: fit-content;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px -5px rgb(34 60 80 / 60%);
-  background-color: rgba(47, 47, 47, 0.6);
-  color: white;
-  padding: 0 0.5em;
   position: relative;
+  height: fit-content;
+  padding: 0 0.5em;
   border-left: 35px solid #DFDEDE;
+  border-radius: 10px;
+  margin: 0 1em;
+  box-shadow: 5px 5px 5px -5px rgb(34 60 80 / 60%);
+  color: white;
+  background-color: rgba(47, 47, 47, 0.6);
   transition: all .5s ease-out;
 }
 
 .comment__block:before {
   content: "\201C";
   position: absolute;
-  left: -29px;
   top: 5px;
+  left: -29px;
+  color: black;
   font-size: 3.5em;
   text-shadow: 1px 2px 0 white;
-  color: black;
 }
 
 .comment__block:hover {
@@ -448,16 +456,16 @@ body {
 
 .comment__text {
   padding: 0.5em;
-  font-style: italic;
   border-bottom: 1px solid black;
+  font-style: italic;
 }
 
 .comment__commentator {
   margin: .5em 1em;
   font-style: italic;
-  text-decoration: underline;
   font-weight: bold;
   font-size: 1.1em;
+  text-decoration: underline;
 }
 
 .comment__img--block { /* для комментариев с картинками */
@@ -467,23 +475,23 @@ body {
 }
 
 .comment__img {
+  width: 235px;
+  height: 130px;
   border: 1px solid wheat;
   border-radius: 15px;
   margin: 0.3em 1.5em;
-  width: 235px;
-  height: 130px;
   transition: all .5s ease-out;
 }
 
 .comment__img:hover {
-  transform: scale(2);
   z-index: 1;
+  transform: scale(2);
 }
 
 .comment__img--size-big {
   width: 500px;
-  object-fit: cover;
   height: 190px;
+  object-fit: cover;
 }
 
 .comment__img--size-big:hover {
@@ -502,8 +510,8 @@ body {
 }
 
 .audio {
-  filter: invert(1);
   width: 45%;
+  filter: invert(1);
   opacity: .8;
 }
 
@@ -520,20 +528,20 @@ body {
 .creation__clip-Enemy,
 .creation__clip-Sting {
   position: fixed;
+  z-index: 1;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  background: rgba(0, 0, 0, 0.85);
-  width: 100%;
-  height: 100%;
   display: flex;
-  font-size: 1rem;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.85);
+  font-size: 1rem;
   visibility: hidden;
   opacity: 0;
-  transition-duration: .3s;
+  transition: all .3s;
 }
 
 .creation__part_1.active,
@@ -563,42 +571,44 @@ body {
   position: relative;
   width: 68%;
   height: 75%;
-  outline: none;
   border: 3px solid wheat;
   border-radius: 25px;
+  outline: none;
 }
 
 .video__close {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: fixed;
   top: 30px;
   right: 30px;
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
-  color: black;
-  background-color: white;
   height: 40px;
   border-radius: 13px;
-  font-size: 1em;
-  transition-duration: .5s;
   box-shadow: 4px 4px 15px 0 rgb(0 0 0 / 50%);
+  background-color: white;
+  color: black;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all .5s;
 }
 
 .video__close:hover {
   padding: 0.3em 0.3em 0.3em;
   border: 1px solid white;
-  color: white;
-  background-color: black;
-  box-shadow: 7px 7px 20px 0 rgb(0 0 0 / 70%);
   border-radius: 0;
+  box-shadow: 7px 7px 20px 0 rgb(0 0 0 / 70%);
+  background-color: black;
+  color: white;
   font-size: 1.6em;
 }
 
 .video__close:active {
   transform: translateY(3px);
 }
+
+/* @media */
 
 @media (max-width: 1200px) {
   .creation__video_1,
@@ -632,10 +642,6 @@ body {
   }
 }
 
-.footer {
-  margin: 0;
-}
-
 @media (max-width: 1380px) {
   .creator, .comment {
     flex-wrap: wrap;
@@ -667,9 +673,9 @@ body {
 
   .creator__card:hover .creator__info {
     position: relative;
-    font-size: .9em;
     border: none;
     background-color: transparent;
+    font-size: .9em;
   }
 
   .comment__block {
