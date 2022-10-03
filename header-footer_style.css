@@ -22,6 +22,7 @@ body {
   background-size: contain;
   font-size: 1rem;
   font-family: 'Oswald', sans-serif;
+  box-shadow: 0 10px 31px 10px rgb(0 0 0);
 }
 
 .header__navigation {
@@ -169,6 +170,7 @@ a .circle {
   background-size: contain;
   font-size: 1rem;
   justify-content: center;
+  box-shadow: 0 -10px 31px 7px rgb(0 0 0);
   align-items: center;
 }
 
