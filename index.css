@@ -3,22 +3,6 @@ body{
   background-position: center;
 }
 
-/*анимации при загрузке страницы*/
-
-.nav,
-.footer {
-  animation: opacityLow 2s ease-in;
-}
-
-@keyframes opacityLow {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: .2;
-  }
-}
-
 /*футер для главной страницы*/
 
 .footer {
@@ -27,6 +11,7 @@ body{
   box-shadow: none;
   opacity: .2;
   transition: box-shadow 1.5s, opacity 1s;
+  animation: opacityLow 2s ease-in;
 }
 
 .footer:hover {
@@ -47,6 +32,7 @@ body{
   font-size: 1rem;
   opacity: .2;
   transition: opacity 1s;
+  animation: opacityLow 2s ease-in;
 }
 
 .nav:hover {
@@ -165,44 +151,4 @@ body{
 
 .nav__link:active {
   transform: translateY(1px);
-}
-
-/* @media */
-
-@media (max-width: 1750px) {
-  .nav__letter {
-    width: 55px;
-    height: 80px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .nav {
-    width: 26%;
-  }
-
-  .nav__letter {
-    width: 40px;
-    height: 62px;
-  }
-
-  .nav__game-logo--image {
-    width: 240px;
-  }
-}
-
-@media (max-width: 780px) {
-  .nav {
-    top: 2%;
-    left: 2%;
-    align-items: flex-start;
-  }
-
-  .nav__riot-logo--block {
-    display: none;
-  }
-
-  .nav__links--block {
-    margin-top: 3em;
-  }
 }

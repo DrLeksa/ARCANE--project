@@ -1,0 +1,61 @@
+@import "css/creators_and_comments.css";
+@import "css/creators_elements.css";
+
+body {
+  background-image: url("images/background/bg_main.jpg");
+  background-position: center;
+  overflow-x: hidden;
+}
+
+.header {
+  animation: opacity 1.5s ease-in;
+}
+
+.footer {
+  margin: 0;
+}
+
+/* quote */
+
+.quote {
+  position: relative;
+  width: 48%;
+  padding: 1.5em 0;
+  margin: 1em auto;
+  color: white;
+  font-size: 1rem;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px 1px rgb(0 0 0);
+  animation: opacity 1.5s ease-in;
+}
+
+.quote:before {
+  content: "\201C";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+  font-size: 6em;
+  font-family: serif;
+  text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+
+.quote__text {
+  margin-top: 1em;
+  font-size: 1.5em;
+}
+
+.quote__author {
+  padding-top: 0.5em;
+  font-style: normal;
+  text-align: right;
+}
+
+/* пустой title для разделения внизу страницы */
+
+.title--empty {
+  height: 25px;
+}
+

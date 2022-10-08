@@ -1,0 +1,60 @@
+.frames {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+  font-size: 1rem;
+}
+
+.frames__carousel {
+  overflow: hidden;
+  height: 540px;
+}
+
+.frames__image-container {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.frames__image {
+  width: 635px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.frames__buttons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.frames__button {
+  display: inline-block;
+  overflow: hidden;
+  width: 80px;
+  padding: 0.5rem 1.2em;
+  border: 1px solid black;
+  margin: 0 1em;
+  box-shadow: 2px 2px 9px 0 rgb(0 0 0 / 80%);
+  background-color: rgba(30, 30, 30, 0.9);
+  color: white;
+  font-size: .9em;
+  font-weight: bold;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.frames__button:hover {
+  width: 140px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+}
+
+#left-button:active {
+  color: black;
+  transform: translateX(-10px);
+}
+
+#right-button:active {
+  color: black;
+  transform: translateX(10px);
+}

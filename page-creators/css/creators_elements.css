@@ -1,0 +1,207 @@
+/* title в creators */
+
+.title {
+  width: 100%;
+  box-shadow: 7px 7px 20px 0 rgb(0 0 0 / 100%);
+  background-image: url(../../images/img_decor/header_bg.jpg);
+  background-size: contain;
+  color: white;
+  font-size: 1.3em;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  animation: transformY 1.5s;
+}
+
+.title__text {
+  padding: .5em;
+  color: #d2d2d2;
+  font-weight: bold;
+  letter-spacing: .02em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* для блоков с видео (они в creator) */
+
+.block_with_video { /* для блока с видео (другое расположение внутри) */
+  width: 100%;
+}
+
+.block_without_video {
+  width: 1319px;
+}
+
+.video--block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 310px;
+  margin: 0 1em;
+  border-radius: 20px;
+}
+
+.video {
+  width: 550px;
+  height: 275px;
+  border: 1px solid wheat;
+  border-radius: 20px;
+  box-shadow: 7px 7px 20px 0 rgb(0 0 0 / 70%);
+}
+
+.video__open {
+  overflow: hidden;
+  padding: 0.2em 1em;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: .3em;
+  box-shadow: 2px 2px 9px 0 rgb(0 0 0 / 80%);
+  background-color: rgba(30, 30, 30, 0.9);
+  color: #cbcbcb;
+  font-size: .9em;
+  text-shadow: 2px 2px 1px rgb(0 0 0);
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.video__open:hover {
+  border: 1px solid white;
+  box-shadow: 7px 7px 20px 0 rgb(0 0 0 / 70%);
+  background-color: #151515;
+  text-shadow: 1px 1px 1px rgb(79, 79, 79);
+}
+
+.video__open:active {
+  transform: translateY(3px);
+}
+
+/*popup video*/
+
+.creation__part_1,
+.creation__part_2,
+.creation__part_3,
+.creation__part_4,
+.creation__part_5,
+.creation__clip-KDA,
+.creation__clip-RISE,
+.creation__clip-JvsE,
+.creation__clip-Enemy,
+.creation__clip-Sting {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.85);
+  font-size: 1rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s;
+}
+
+.creation__part_1.active,
+.creation__part_2.active,
+.creation__part_3.active,
+.creation__part_4.active,
+.creation__part_5.active,
+.creation__clip-KDA.active,
+.creation__clip-RISE.active,
+.creation__clip-JvsE.active,
+.creation__clip-Enemy.active,
+.creation__clip-Sting.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.creation__video_1,
+.creation__video_2,
+.creation__video_3,
+.creation__video_4,
+.creation__video_5,
+.creation__video-KDA,
+.creation__video-RISE,
+.creation__video-JvsE,
+.creation__video-Enemy,
+.creation__video-Sting {
+  position: relative;
+  width: 68%;
+  height: 75%;
+  border: 3px solid wheat;
+  border-radius: 25px;
+  outline: none;
+}
+
+.video__close {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 13px;
+  box-shadow: 4px 4px 15px 0 rgb(0 0 0 / 50%);
+  background-color: white;
+  color: black;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.video__close:hover {
+  padding: 0.3em 0.3em 0.3em;
+  border: 1px solid white;
+  border-radius: 0;
+  box-shadow: 7px 7px 20px 0 rgb(0 0 0 / 70%);
+  background-color: black;
+  color: white;
+  font-size: 1.6em;
+}
+
+.video__close:active {
+  transform: translateY(3px);
+}
+
+/* выделенный текст */
+
+.text--highlight {
+  transition: all .3s ease-out;
+}
+
+.creator:hover .text--highlight,
+.comment:hover .text--highlight {
+  color: #ffd377;
+  text-shadow: 2px 2px 1px rgb(46, 2, 58);
+}
+
+.text-parentheses {  /* текст в скобках */
+  font-style: italic;
+}
+
+.text-parentheses:before,
+.text-parentheses:after,
+.text--highlight:before,
+.text--highlight:after {
+  content: ' ';
+}
+
+/* audio */
+
+.audio__block {
+  padding: 0.5em 1em 0.1em;
+}
+
+.comment__block > .audio__block,
+.comment__block > .comment__img--block {
+  border-bottom: 1px solid black;
+}
+
+.audio {
+  width: 45%;
+  filter: invert(1);
+  opacity: .8;
+}

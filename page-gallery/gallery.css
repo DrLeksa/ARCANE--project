@@ -1,0 +1,62 @@
+@import "css/gallery_section.css";
+@import "css/slider.css";
+@import "css/frames.css";
+
+body {
+  background-image: url(images/bg.jpg);
+}
+
+/* character-gallery */
+
+.character-gallery--section {
+  display: flex;
+  height: 100vh;
+  font-size: 1rem;
+}
+
+.character-gallery__link {
+  width: 25%;
+  cursor: pointer;
+  transition: all .5s ease-out;
+}
+
+.character-gallery--jinx {
+  animation: width 2s;
+}
+
+.character-gallery--caitlyn,
+.character-gallery--vi {
+  animation: translateX 2s;
+}
+
+.character-gallery--silco,
+.character-gallery--jayce {
+  animation: minusTranslateX 2s;
+}
+
+.character-gallery__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* стили для gallery_hover.js */
+
+.hover {
+  width: 48%;
+  filter: none;
+}
+
+.not-hover {
+  filter: grayscale(0.8) blur(2px);
+}
+
+  /* просто блок для разделения */
+
+.border {
+  width: 100%;
+  height: 25px;
+  box-shadow: 0 10px 31px 10px rgb(0 0 0);
+  background-image: url(../images/img_decor/header_bg.jpg);
+  background-size: contain;
+}
