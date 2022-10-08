@@ -310,8 +310,12 @@
     flex-wrap: wrap;
   }
 
+  .audio__block {
+    justify-content: center;
+  }
+
   .audio {
-    width: 90%;
+    width: 50%;
   }
 }
 
@@ -322,7 +326,6 @@
 
   .comment__img:hover {
     transform: scale(1.5);
-
   }
 }
 
@@ -333,7 +336,14 @@
 
   .comment__img:hover {
     transform: scale(1.3);
+  }
 
+  .audio__block {
+    flex-direction: column;
+  }
+
+  .audio {
+    width: 80%;
   }
 }
 

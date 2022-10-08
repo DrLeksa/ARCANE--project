@@ -124,6 +124,7 @@ a .circle {
   margin: 0 1em;
   box-shadow: none;
   background: transparent;
+  transition: all .5s;
 }
 
 .header__logo-link:before,
@@ -134,6 +135,10 @@ a .circle {
 .header__logo-link:hover {
   box-shadow: none;
   transform: scale(1.05);
+}
+
+.header__logo-link:active {
+  transform: scale(.95);
 }
 
 .header__logo {

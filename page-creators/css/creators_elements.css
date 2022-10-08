@@ -192,7 +192,10 @@
 /* audio */
 
 .audio__block {
-  padding: 0.5em 1em 0.1em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.5em 1em;
 }
 
 .comment__block > .audio__block,
@@ -204,4 +207,10 @@
   width: 45%;
   filter: invert(1);
   opacity: .8;
+}
+
+.audio__name {
+  padding: .5em 1em;
+  color: #d5d5d5;
+  font-style: italic;
 }
