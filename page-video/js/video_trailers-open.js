@@ -1,3 +1,5 @@
+"use strict"
+
 const trailerFirst = document.querySelector('.trailer__first-video--block');
 const videoFirst = document.querySelector('.trailer__first-video');
 const trailerSecond = document.querySelector('.trailer__second-video--block');
