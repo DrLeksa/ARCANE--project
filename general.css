@@ -1,5 +1,4 @@
 @import "css/animations.css";
-@import "css/@media.css";
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Oswald&display=swap');
 
 * {
@@ -85,7 +84,7 @@ body {
   height: 1px;
   margin: 0.2em 0;
   background: black;
-  transition: all .3s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition: all .3s cubic-bezier(0.22, 0.61, 0.36, 1) .2s;
 }
 
 .header__link:hover:after {

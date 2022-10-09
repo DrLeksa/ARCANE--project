@@ -17,7 +17,7 @@
 
 /*footer + scroll-top*/
 
-@media (max-width: 1280px) {
+@media (max-width: 1405px) {
   .footer__text-block {
     width: 80%;
     padding: 0.5em 0;
@@ -48,8 +48,7 @@
   }
 
   .scroll-top {
-    bottom: 9em;
-    right: 1em;
+    bottom: 7em;
   }
 }
 
@@ -74,41 +73,42 @@
 
 /* главная nav */
 
-@media (max-width: 1750px) {
-  .nav__letter {
-    width: 55px;
-    height: 80px;
-  }
-}
-
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .nav {
     width: 26%;
   }
 
   .nav__letter {
-    width: 40px;
-    height: 62px;
+    width: 55px;
+    height: 80px;
   }
 
   .nav__game-logo--image {
-    width: 240px;
+    width: 280px;
   }
 }
 
-@media (max-width: 780px) {
-  .nav {
-    top: 2%;
-    left: 2%;
-    align-items: flex-start;
+@media (max-width: 1100px) {
+  body {
+    background-image: url(../images/center_bg.jpg);
   }
 
-  .nav__riot-logo--block {
+  .main-page__header {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .main-page__header {
     display: none;
   }
 
-  .nav__links--block {
-    margin-top: 3em;
+  .toggle-nav {
+    display: flex;
   }
 }
 
