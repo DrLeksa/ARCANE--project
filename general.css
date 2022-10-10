@@ -1,3 +1,4 @@
+@import "css/animations.css";
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Oswald&display=swap');
 
 * {
@@ -12,17 +13,6 @@ body {
   background-size: cover;
   /*font-family: 'Oswald', sans-serif; */      /* для заголовков */
   font-family: 'Nunito', sans-serif;           /* для текста */
-}
-
-/* общая анимация при загрузке страницы*/
-
-@keyframes opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 /* header */
@@ -94,7 +84,7 @@ body {
   height: 1px;
   margin: 0.2em 0;
   background: black;
-  transition: all .3s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition: all .3s cubic-bezier(0.22, 0.61, 0.36, 1) .2s;
 }
 
 .header__link:hover:after {
@@ -110,13 +100,6 @@ a .circle {
   background-color: black;
   transform: translate(-50%, -50%) scale(0);
   animation: scale 0.6s ease-out;
-}
-
-@keyframes scale {
-  to {
-    transform: translate(-50%, -50%) scale(3);
-    opacity: 0;
-  }
 }
 
 .header__text {
@@ -140,6 +123,7 @@ a .circle {
   margin: 0 1em;
   box-shadow: none;
   background: transparent;
+  transition: all .5s;
 }
 
 .header__logo-link:before,
@@ -150,6 +134,10 @@ a .circle {
 .header__logo-link:hover {
   box-shadow: none;
   transform: scale(1.05);
+}
+
+.header__logo-link:active {
+  transform: scale(.95);
 }
 
 .header__logo {
@@ -329,76 +317,3 @@ a .circle {
   visibility: visible;
   opacity: 1;
 }
-
-/* @media */
-
-@media (max-width: 775px) {
-  .header__letter--display-none {
-    display: none;
-  }
-}
-
-@media (max-width: 600px) {
-  .header__link {
-    padding:0 .6em;
-    margin: 0 0.4em;
-  }
-}
-
-/*footer + scroll-top*/
-
-@media (max-width: 1280px) {
-  .footer__text-block {
-    width: 80%;
-    padding: 0.5em 0;
-  }
-}
-
-@media (max-width: 900px) {
-  .footer__networks-block {
-    width: 190px;
-    margin-top: 0.4em;
-  }
-
-  .footer__network {
-    width: 40px;
-    height: 40px;
-    font-size: 1.5em;
-  }
-}
-
-@media (max-width: 750px) {
-  .footer__text--netflix {
-    font-size: 0.8em;
-  }
-
-  .footer__image--netflix,
-  .footer__image--riot {
-    width: 120px;
-  }
-
-  .scroll-top {
-    bottom: 9em;
-    right: 1em;
-  }
-}
-
-@media (max-width: 540px) {
-  .footer__content {
-    margin: 0 1em;
-  }
-
-  .footer__text--netflix {
-    width: 105px;
-  }
-
-  .footer__networks-block {
-    width: 100%;
-    order: 1;
-  }
-
-  .footer__text-block {
-    order: 2;
-  }
-}
-

@@ -1,0 +1,89 @@
+.slider {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  pointer-events: none;
+  opacity: 0;
+}
+
+.slider__container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 80vw;
+  height: 80vh;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+
+.active {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.slider__button {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  display: inline-block;
+  padding: 0.2em 0.4em;
+  border: 1px solid #575757;
+  border-radius: 38px;
+  transform: translateY(-50%);
+  box-shadow: 4px 4px 15px 0 rgb(0 0 0 / 50%);
+  background: none;
+  color: white;
+  font-size: 1.7em;
+  cursor: pointer;
+  transition: all .4s;
+}
+
+.slider__button:hover {
+  box-shadow: 7px 7px 20px 0 rgb(0 0 0 / 70%);
+  background-color: white;
+  color: black;
+}
+
+.slider__left-button {
+  left: -70px;
+  transition: all .5s;
+}
+
+.slider__right-button {
+  right: -70px;
+  transition: all .5s;
+}
+
+.slider__left-button:active {
+  transform: translateY(-22px) translateX(-7px);
+}
+
+.slider__right-button:active {
+  transform: translateY(-22px) translateX(7px);
+}
+
+.slider__close {
+  position: absolute;
+  z-index: 2;
+  right: -60px;
+  top: -60px;
+  padding: 0 0.3em;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.slider__close:hover {
+  transform: scale(1.25);
+}
+
+.slider__close:active {
+  transform: scale(1);
+}

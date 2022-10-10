@@ -1,0 +1,142 @@
+.video-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1rem;
+}
+
+.header__link {   /*кнопки отображаются над before*/
+  z-index: 1;
+}
+
+.video-section:before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  top: -82px;
+  width: 100%;
+  height: 550px;
+  background-image: url("../../images/img_decor/glass-top.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation: showTop 2s;    /*анимации при загрузке страницы*/
+}
+
+.video-section:after {
+  content: '';
+  position: absolute;
+  bottom: 62px;
+  width: 100%;
+  height: 440px;
+  background-image: url("../../images/img_decor/glass-bottom.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation: showBot 2s;    /*анимации при загрузке страницы*/
+}
+
+.video-section__video--block {
+  position: absolute;
+  z-index: -1;
+  top: -62px;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 20px 31px 14px rgb(0 0 0);
+  background: url("../images/video_bg.jpg") no-repeat center center;
+  background-size: cover;
+  opacity: 0;
+  transform: scale(5);
+  animation: zoom 2s;         /*анимации при загрузке страницы*/
+  animation-fill-mode: forwards;
+}
+
+.video-section__video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+
+.video-section__logo--block {
+  position: absolute;
+  top: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-section__text--block {
+  padding-bottom: 1em;
+  opacity: 0;
+  transition: all 1s;
+  animation: opacity 1.5s ease-in;   /*анимации при загрузке страницы*/
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.video-section__text {
+  color: #EDE0CE;
+  font-size: .9em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.video-section__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1em;
+  opacity: 0;
+  animation: zoomLogo 1.5s ease-in; /*анимации при загрузке страницы*/
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.video__letter--block {
+  padding: 0 0.3em;
+}
+
+.video-section__letter--size-big {
+  width: 90px;
+  height: 120px;
+  transition: all 1s;
+}
+
+.video-section__game-logo--block {
+  opacity: 0;
+  animation: zoomLogo 1.5s ease-in;  /*анимации при загрузке страницы*/
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.video-section__game-logo {
+  width: 400px;
+  transition: all 1s;
+}
+
+.video-section__button {
+  position: absolute;
+  z-index: 1;
+  bottom: 77px;
+  left: 0;
+  width: 170px;
+  padding: 0.4em;
+  border-radius: 5px;
+  margin: 0 1em;
+  background: transparent;
+  color: #a8a8a8;
+  font-size: .9em;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.video-section__button:hover {
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+}

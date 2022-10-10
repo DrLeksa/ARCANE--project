@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="../icons/fontawesome/all.min.css" type="text/css">
     <link rel="stylesheet" href="../general.css" type="text/css">
     <link rel="stylesheet" href="creators.css" type="text/css">
+    <link rel="stylesheet" href="../css/@media.css" type="text/css">
   </head>
   <body>
     <header class="header">
-      <div class="header__navigation">
-        <a class="header__link button_ripple" href="../video_page/video_page.html" title="Трейлеры и Сериал">
+      <nav class="header__navigation">
+        <a class="header__link button_ripple" href="../page-video/video_page.html" title="Трейлеры и Сериал">
           <p class="header__text">Видео</p></a>
-        <a class="header__link button_ripple" href="../gallery_page/gallery_page.html" title="Галерея">
+        <a class="header__link button_ripple" href="../page-gallery/gallery_page.html" title="Галерея">
           <p class="header__text">Иллюстрации</p></a>
         <a class="header__link header__logo-link" href="../index.html" title="Главная страница">
           <div class="header__logo">
@@ -40,7 +41,7 @@
         <a class="header__link button_ripple" href="creators_page.html" title="Как создавался Аркейн">
           <p class="header__text">Создание</p></a>
         <a class="header__link button_ripple" href="#" title="История мира"><p class="header__text">История</p></a>
-      </div>
+      </nav>
     </header>
     <script src="../js/button_ripple.js"></script>
 
@@ -316,7 +317,7 @@
               <p class="creator__text">Идея состоит в том, чтобы каждый кадр превосходил по качеству созданное с помощью
                 классической 2D-анимации. И 3D позволяет нам это делать. А так же убедиться, что
                 <span class="text--highlight">каждый кадр, когда вы ставите на паузу ... концепт-арт, красивая
-                иллюстрация</span> -<a class="creator__gallery-link" href="../gallery_page/gallery_page.html#frames"
+                иллюстрация</span> -<a class="creator__gallery-link" href="../page-gallery/gallery_page.html#frames"
                 target="_blank" title="Галерея кадров из сериала">Галерея стоп-кадров</a>.</p>
             </div>
           </div>
@@ -355,11 +356,13 @@
                 <audio class="audio"
                        src="music/Against%20The%20Current%20-%20Legends%20Never%20Die.mp3" controls>
                 </audio>
+                <p class="audio__name">Legends Never Die (ft. Against The Current)</p>
               </div>
               <p class="creator__text">Было очень трудно обходить диалоги и попадать в пиковые моменты, которые могут не
                 подходить под заданный темп</p>
               <div class="audio__block">
                 <audio class="audio" src="music/bones_uk_Dirty_Little_Animals_Arcane.mp3" controls></audio>
+                <p class="audio__name">Bones UK - Dirty Little Animals</p>
               </div>
             </div>
           </div>
@@ -450,6 +453,7 @@
               возьмет верх и будет в центре внимания.</span></p>
             <div class="audio__block">
               <audio class="audio" src="music/Pusha%20T,%20Mako%20-%20Misfit%20Toys.mp3" controls></audio>
+              <p class="audio__name">Pusha T & Mako - Misfit Toys</p>
             </div>
             <p class="comment__commentator">Christian Linke</p>
           </div>
@@ -464,6 +468,7 @@
               леденящую душу струнную композицию, что я когда-либо слышал.</span></p>
             <div class="audio__block">
               <audio class="audio" src="music/Woodkid_-_Guns_for_Hire.mp3" controls></audio>
+              <p class="audio__name">WOODKID - Guns For Hire</p>
             </div>
             <p class="comment__commentator">Alex (Mako) Seaver</p>
           </div>
@@ -507,6 +512,7 @@
                 <audio class="audio"
                        src="music/Denzel_Curry,_Gizzle,_Bren_%20Joy-Dynasties_and_%20Dystopia.mp3" controls>
                 </audio>
+                <p class="audio__name">Denzel Curry, Gizzle, Bren Joy - Dynasties & Dystopia</p>
               </div>
             </div>
           </div>
@@ -532,6 +538,7 @@
               <span class="text--highlight">И мы подумали: "Просто дадим ей делать свою работу".</span></p>
             <div class="audio__block">
               <audio class="audio" src="music/PVRIS_MIYAVI_-_Snakes_Arcane_League_of_Legends_.mp3" controls></audio>
+              <p class="audio__name">Miyavi & PVRIS - Snakes</p>
             </div>
             <p class="comment__text">Это весьма круто. В духе Вай. Всё правильно. У нее есть даже бритый висок и кольцо
               в
@@ -610,6 +617,7 @@
                 ощущением, что ты против всего мира.</span></p>
               <div class="audio__block">
                 <audio class="audio" src="music/Imagine%20Dragons%20-%20Enemy%20(Feat.%20JID).mp3" controls></audio>
+                <p class="audio__name">Imagine Dragons and J.I.D – Enemy</p>
               </div>
             </div>
           </div>
@@ -672,6 +680,7 @@
               что мы и хотели - вознести этот момент над всеми прочими.</span></p>
             <div class="audio__block">
               <audio class="audio" src="music/Sting_-_What_Could_Have_Been.mp3" controls></audio>
+              <p class="audio__name">Sting - What Could Have Been</p>
             </div>
             <p class="comment__commentator">Alex (Mako) Seaver</p>
           </div>
@@ -827,24 +836,24 @@
 
     <footer class="footer">
       <div class="footer__block">
-        <div class="footer__content footer__netflix-block">
+        <nav class="footer__content footer__netflix-block">
           <p class="footer__text--netflix">Уже доступно на</p>
           <a href="https://www.netflix.com/by-ru/title/81435684" target="_blank" title="Смотреть на Netflix">
             <img class="footer__image--netflix" src="../images/footer/netflix-logo-vector.svg" alt="no image">
           </a>
-        </div>
-        <div class="footer__content footer__networks-block">
+        </nav>
+        <nav class="footer__content footer__networks-block">
           <a class="footer__network" href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
           <a class="footer__network" href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
           <a class="footer__network" href="#" title="VK"><i class="fa-brands fa-vk"></i></a>
           <a class="footer__network" href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
           <a class="footer__network" href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
-        </div>
-        <div class="footer__content">
+        </nav>
+        <nav class="footer__content">
           <a href="https://www.riotgames.com/en" target="_blank" title="riotgames.com">
             <img class="footer__image--riot" src="../images/footer/riot.png" alt="no image">
           </a>
-        </div>
+        </nav>
         <div class="footer__content footer__text-block">
           <p class="footer__text">© 2021 Riot Games, Inc. ARCANE LEAGUE OF LEGENDS и все связанные с ним логотипы
             являются товарными знаками, знаками обслуживания и/или зарегистрированными товарными знаками Riot Games,

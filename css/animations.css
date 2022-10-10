@@ -1,0 +1,117 @@
+/* общая анимация при загрузке страницы*/
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* анимация для кнопок .circle */
+
+@keyframes scale {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
+
+/* анимация при загрузке главной страницы */
+
+@keyframes opacityLow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+
+/* анимации для page-video */
+
+@keyframes showTop {
+  from {
+    top:-100%;
+  }
+  to {
+    top:-82px;
+  }
+}
+
+@keyframes showBot {
+  from {
+    bottom:-100%;
+  }
+  to {
+    bottom:62px;
+  }
+}
+
+@keyframes zoom {
+  0% {
+    opacity: 0;
+    transform: scale(5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomLogo {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* анимации при загрузке page-gallery */
+
+@keyframes width {
+  0% {
+    z-index: 1;
+    width: 70%;
+  }
+
+  100% {
+    z-index: 1;
+    width: 25%;
+  }
+}
+
+@keyframes translateX {
+  0% {
+    transform: translateX(596px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes minusTranslateX {
+  0% {
+    transform: translateX(-596px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* анимации при загрузке page-creators */
+
+@keyframes transformY {
+  0% {
+    transform: translateY(5%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

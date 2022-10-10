@@ -1,3 +1,5 @@
+"use strict"
+
 const galleryCaitlyn = document.querySelector('.gallery--caitlyn');
 const galleryVi = document.querySelector('.gallery--vi');
 const galleryJinx = document.querySelector('.gallery--jinx');

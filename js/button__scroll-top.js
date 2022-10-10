@@ -1,3 +1,5 @@
+"use strict"
+
 const buttonScrollTop = document.querySelector('.scroll-top');
 /*два обработчика*/
 window.addEventListener('scroll', trackScroll);

@@ -1,3 +1,5 @@
+"use strict"
+
 const creationPart1 = document.querySelector('.creation__part_1');
 const creationPart2 = document.querySelector('.creation__part_2');
 const creationPart3 = document.querySelector('.creation__part_3');

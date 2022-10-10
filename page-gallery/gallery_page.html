@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="../icons/fontawesome/all.min.css" type="text/css">
     <link rel="stylesheet" href="../general.css" type="text/css">
     <link rel="stylesheet" href="gallery.css" type="text/css">
+    <link rel="stylesheet" href="../css/@media.css" type="text/css">
   </head>
   <body>
     <header class="header">
-      <div class="header__navigation">
-        <a class="header__link button_ripple" href="../video_page/video_page.html" title="Трейлеры и Сериал">
+      <nav class="header__navigation">
+        <a class="header__link button_ripple" href="../page-video/video_page.html" title="Трейлеры и Сериал">
           <p class="header__text">Видео</p></a>
         <a class="header__link button_ripple" href="gallery_page.html" title="Галерея">
           <p class="header__text">Иллюстрации</p></a>
@@ -37,10 +38,10 @@
             </div>
           </div>
         </a>
-        <a class="header__link button_ripple" href="../creators_page/creators_page.html" title="Как создавался Аркейн">
+        <a class="header__link button_ripple" href="../page-creators/creators_page.html" title="Как создавался Аркейн">
           <p class="header__text">Создание</p></a>
         <a class="header__link button_ripple" href="#" title="История мира"><p class="header__text">История</p></a>
-      </div>
+      </nav>
     </header>
     <script src="../js/button_ripple.js"></script>
 
@@ -63,7 +64,7 @@
     </section>
     <script src="js/gallery_hover.js"></script>
 
-    <div class="gallery gallery--caitlyn">
+    <section class="gallery gallery--caitlyn">
       <div class="gallery__card">
         <img class="gallery__image" src="images/caitlyn/cait_2.jpg" alt="no image">
       </div>
@@ -92,8 +93,8 @@
         <img class="gallery__image" src="images/caitlyn/cait-vi_1.jpg" alt="no image">
       </div>
       <button class="gallery__close" onclick="toggleCaitlyn();" type="button"><i class="fa-solid fa-xmark"></i></button>
-    </div>
-    <div class="gallery gallery--vi">
+    </section>
+    <section class="gallery gallery--vi">
       <div class="gallery__card">
         <img class="gallery__image" src="images/vi/vi_0.jpg" alt="no image">
       </div>
@@ -122,8 +123,8 @@
         <img class="gallery__image" src="images/vi/vi-kid.jpg" alt="no image">
       </div>
       <button class="gallery__close" onclick="toggleVi();" type="button"><i class="fa-solid fa-xmark"></i></button>
-    </div>
-    <div class="gallery gallery--jinx">
+    </section>
+    <section class="gallery gallery--jinx">
       <div class="gallery__card">
         <img class="gallery__image" src="images/jinx/jinx-name.jpg" alt="no image">
       </div>
@@ -152,8 +153,8 @@
         <img class="gallery__image" src="images/jinx/jinx_and_vi_kid.png" alt="no image">
       </div>
       <button class="gallery__close" onclick="toggleJinx();" type="button"><i class="fa-solid fa-xmark"></i></button>
-    </div>
-    <div class="gallery gallery--silco">
+    </section>
+    <section class="gallery gallery--silco">
       <div class="gallery__card">
         <img class="gallery__image" src="images/silco/silco_0.png" alt="no image">
       </div>
@@ -173,8 +174,8 @@
         <img class="gallery__image" src="images/silco/silco_5.jpg" alt="no image">
       </div>
       <button class="gallery__close" onclick="toggleSilco();" type="button"><i class="fa-solid fa-xmark"></i></button>
-    </div>
-    <div class="gallery gallery--jayce">
+    </section>
+    <section class="gallery gallery--jayce">
       <div class="gallery__card">
         <img class="gallery__image" src="images/jayce/jayce_0.jpg" alt="no image">
       </div>
@@ -194,7 +195,7 @@
         <img class="gallery__image" src="images/jayce/jayce_6.jpg" alt="no image">
       </div>
       <button class="gallery__close" onclick="toggleJayce();" type="button"><i class="fa-solid fa-xmark"></i></button>
-    </div>
+    </section>
     <script src="js/gallery_choose-gallery.js"></script>
 
     <div class="border"></div>
@@ -282,24 +283,24 @@
 
     <footer class="footer">
       <div class="footer__block">
-        <div class="footer__content footer__netflix-block">
+        <nav class="footer__content footer__netflix-block">
           <p class="footer__text--netflix">Уже доступно на</p>
           <a href="https://www.netflix.com/by-ru/title/81435684" target="_blank" title="Смотреть на Netflix">
             <img class="footer__image--netflix" src="../images/footer/netflix-logo-vector.svg" alt="no image">
           </a>
-        </div>
-        <div class="footer__content footer__networks-block">
+        </nav>
+        <nav class="footer__content footer__networks-block">
           <a class="footer__network" href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
           <a class="footer__network" href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
           <a class="footer__network" href="#" title="VK"><i class="fa-brands fa-vk"></i></a>
           <a class="footer__network" href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
           <a class="footer__network" href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
-        </div>
-        <div class="footer__content">
+        </nav>
+        <nav class="footer__content">
           <a href="https://www.riotgames.com/en" target="_blank" title="riotgames.com">
             <img class="footer__image--riot" src="../images/footer/riot.png" alt="no image">
           </a>
-        </div>
+        </nav>
         <div class="footer__content footer__text-block">
           <p class="footer__text">© 2021 Riot Games, Inc. ARCANE LEAGUE OF LEGENDS и все связанные с ним логотипы
             являются товарными знаками, знаками обслуживания и/или зарегистрированными товарными знаками Riot Games,

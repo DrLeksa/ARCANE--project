@@ -1,3 +1,5 @@
+"use strict"
+
 const buttons = document.querySelectorAll('.button_ripple');
 
 buttons.forEach(button => {

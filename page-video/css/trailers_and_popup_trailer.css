@@ -1,0 +1,148 @@
+/*трейлеры*/
+
+.trailers {
+  margin: 1em 0;
+  font-size: 1rem;
+}
+
+.trailers__block {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.trailer__link {
+  position: relative;
+  width: 550px;
+  height: 750px;
+  border: 4px solid #5e3e5d;
+  border-radius: 35px;
+  margin: 1em;
+  box-shadow: 3px 5px 10px 2px rgb(0 0 0);
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.trailer__link:hover {
+  border-color: wheat;
+  box-shadow: 5px 7px 12px 4px rgb(0 0 0);
+  transform: scale(1.05);
+}
+
+.trailer__image-block {
+  width: 100%;
+  height: 100%;
+}
+
+.trailer__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 32px;
+  transition: all .5s;
+}
+
+.trailer__text--block {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  padding: .2em 2.3em;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  border-radius: 75px;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px 0 #BD9772 inset, 0 0 10px 4px #BD9772;
+  background: rgba(85, 69, 42, 0.8);
+  background: linear-gradient(90deg, rgba(85, 69, 42, 0.8) 0%,
+  rgba(174, 126, 87, 0.8) 36%, rgba(206, 165, 121, 0.8) 76%, rgba(237, 224, 206, 0.8) 100%);
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.4em;
+  text-align: center;
+  transition: all .5s;
+}
+
+.trailer__link:hover .trailer__text--block {
+  opacity: 0;
+}
+
+.trailer__text {
+  margin: .3em 0;
+}
+
+.trailer__icon {
+  font-size: 3em;
+}
+
+/*popup trailer*/
+
+.trailer__first-video--block,
+.trailer__second-video--block {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.85);
+  font-size: 1rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s;
+}
+
+.trailer__first-video--block.active,
+.trailer__second-video--block.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.trailer__first-video,
+.trailer__second-video {
+  position: relative;
+  width: 75%;
+  height: 82%;
+  border: 5px solid wheat;
+  border-radius: 25px;
+  outline: none;
+}
+
+.trailer__close {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 13px;
+  box-shadow: 4px 4px 15px 0 rgb(0 0 0 / 50%);
+  background-color: white;
+  color: black;
+  font-size: 1em;
+  transition: all.5s;
+  cursor: pointer;
+}
+
+.trailer__close:hover {
+  padding: 0.3em 0.3em 0.3em;
+  border: 1px solid white;
+  border-radius: 0;
+  box-shadow: 7px 7px 20px 0 rgb(0 0 0 / 70%);
+  background-color: black;
+  color: white;
+  font-size: 1.6em;
+}
+
+.trailer__close:active {
+  transform: translateY(3px);
+}

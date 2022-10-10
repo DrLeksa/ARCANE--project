@@ -1,0 +1,12 @@
+@import "css/video-section.css";
+@import "css/trailers_and_popup_trailer.css";
+@import "css/series.css";
+
+body {
+  overflow-x: hidden;
+  background-image: url(images/video_bg.jpg);
+}
+
+.header {
+  animation: opacity 2s ease-in;   /*анимации при загрузке страницы*/
+}
